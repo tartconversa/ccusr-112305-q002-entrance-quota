@@ -1,0 +1,42 @@
+[
+  {
+    "tranche": "L1",
+    "version": 1,
+    "day": "2026-02-17",
+    "window": 4,
+    "gate": "E1",
+    "terminal": "T-A",
+    "quota": 14,
+    "replaces": null
+  },
+  {
+    "tranche": "L2",
+    "version": 1,
+    "day": "2026-02-17",
+    "window": 4,
+    "gate": "E2",
+    "terminal": "T-B",
+    "quota": 10,
+    "replaces": null
+  },
+  {
+    "tranche": "L1",
+    "version": 2,
+    "day": "2026-02-17",
+    "window": 4,
+    "gate": "E1",
+    "terminal": "T-A",
+    "quota": 5,
+    "replaces": "L1/1"
+  },
+  {
+    "tranche": "L3",
+    "version": 1,
+    "day": "2026-02-17",
+    "window": 5,
+    "gate": "E2",
+    "terminal": "T-C",
+    "quota": 13,
+    "replaces": null
+  }
+]

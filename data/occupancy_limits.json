@@ -1,0 +1,17 @@
+[
+  {
+    "zone": "A",
+    "max_people": 48,
+    "reserved": 7
+  },
+  {
+    "zone": "B",
+    "max_people": 42,
+    "reserved": 5
+  },
+  {
+    "zone": "C",
+    "max_people": 55,
+    "reserved": 6
+  }
+]

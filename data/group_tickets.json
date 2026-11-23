@@ -1,0 +1,46 @@
+[
+  {
+    "ticket": "G1",
+    "day": "2026-02-17",
+    "people": 9,
+    "window": 4,
+    "assigned_gate": "E1",
+    "stages": "已签到在途",
+    "alternate_gates": [
+      "E2"
+    ]
+  },
+  {
+    "ticket": "G2",
+    "day": "2026-02-17",
+    "people": 11,
+    "window": 4,
+    "assigned_gate": "E1",
+    "stages": "已出票",
+    "alternate_gates": [
+      "E2"
+    ]
+  },
+  {
+    "ticket": "G3",
+    "day": "2026-02-17",
+    "people": 15,
+    "window": 5,
+    "assigned_gate": "E2",
+    "stages": "已付待发",
+    "alternate_gates": [
+      "E1"
+    ]
+  },
+  {
+    "ticket": "G4",
+    "day": "2026-02-17",
+    "people": 10,
+    "window": 6,
+    "assigned_gate": "E2",
+    "stages": "可协商",
+    "alternate_gates": [
+      "E1"
+    ]
+  }
+]

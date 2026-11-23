@@ -1,0 +1,7463 @@
+[
+  {
+    "id": "2026-02-02-E1-0",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-AB-0",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-BA-0",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-BC-0",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-CO-0",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-E2-0",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1050
+  },
+  {
+    "id": "2026-02-02-E1-1",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1056
+  },
+  {
+    "id": "2026-02-02-AB-1",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1057
+  },
+  {
+    "id": "2026-02-02-BA-1",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1054
+  },
+  {
+    "id": "2026-02-02-BC-1",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1057
+  },
+  {
+    "id": "2026-02-02-CO-1",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1059
+  },
+  {
+    "id": "2026-02-02-E2-1",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1056
+  },
+  {
+    "id": "2026-02-02-E1-2",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1063
+  },
+  {
+    "id": "2026-02-02-AB-2",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1061
+  },
+  {
+    "id": "2026-02-02-BA-2",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1056
+  },
+  {
+    "id": "2026-02-02-BC-2",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1061
+  },
+  {
+    "id": "2026-02-02-CO-2",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1069
+  },
+  {
+    "id": "2026-02-02-E2-2",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1060
+  },
+  {
+    "id": "2026-02-02-E1-3",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1067
+  },
+  {
+    "id": "2026-02-02-AB-3",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1066
+  },
+  {
+    "id": "2026-02-02-BA-3",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1059
+  },
+  {
+    "id": "2026-02-02-BC-3",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1066
+  },
+  {
+    "id": "2026-02-02-CO-3",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1076
+  },
+  {
+    "id": "2026-02-02-E2-3",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1065
+  },
+  {
+    "id": "2026-02-02-E1-4",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1072
+  },
+  {
+    "id": "2026-02-02-AB-4",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1072
+  },
+  {
+    "id": "2026-02-02-BA-4",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1063
+  },
+  {
+    "id": "2026-02-02-BC-4",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1072
+  },
+  {
+    "id": "2026-02-02-CO-4",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1084
+  },
+  {
+    "id": "2026-02-02-E2-4",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1071
+  },
+  {
+    "id": "2026-02-02-E1-5",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1078
+  },
+  {
+    "id": "2026-02-02-BA-5",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1064
+  },
+  {
+    "id": "2026-02-02-BC-5",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1078
+  },
+  {
+    "id": "2026-02-02-E2-5",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1075
+  },
+  {
+    "id": "2026-02-02-E1-6",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1085
+  },
+  {
+    "id": "2026-02-02-AB-6",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1083
+  },
+  {
+    "id": "2026-02-02-BA-6",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1065
+  },
+  {
+    "id": "2026-02-02-BC-6",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1080
+  },
+  {
+    "id": "2026-02-02-CO-6",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1103
+  },
+  {
+    "id": "2026-02-02-E2-6",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1080
+  },
+  {
+    "id": "2026-02-02-E1-7",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1089
+  },
+  {
+    "id": "2026-02-02-AB-7",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1088
+  },
+  {
+    "id": "2026-02-02-BA-7",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1067
+  },
+  {
+    "id": "2026-02-02-BC-7",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1083
+  },
+  {
+    "id": "2026-02-02-CO-7",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1110
+  },
+  {
+    "id": "2026-02-02-E2-7",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1086
+  },
+  {
+    "id": "2026-02-02-E1-8",
+    "day": "2026-02-02",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1094
+  },
+  {
+    "id": "2026-02-02-AB-8",
+    "day": "2026-02-02",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1094
+  },
+  {
+    "id": "2026-02-02-BA-8",
+    "day": "2026-02-02",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1069
+  },
+  {
+    "id": "2026-02-02-BC-8",
+    "day": "2026-02-02",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1089
+  },
+  {
+    "id": "2026-02-02-CO-8",
+    "day": "2026-02-02",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1118
+  },
+  {
+    "id": "2026-02-02-E2-8",
+    "day": "2026-02-02",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1090
+  },
+  {
+    "id": "2026-02-03-E1-0",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-AB-0",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-BA-0",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-BC-0",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-CO-0",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-E2-0",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1100
+  },
+  {
+    "id": "2026-02-03-E1-1",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1107
+  },
+  {
+    "id": "2026-02-03-AB-1",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1105
+  },
+  {
+    "id": "2026-02-03-BA-1",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1102
+  },
+  {
+    "id": "2026-02-03-BC-1",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1105
+  },
+  {
+    "id": "2026-02-03-CO-1",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1110
+  },
+  {
+    "id": "2026-02-03-E2-1",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1104
+  },
+  {
+    "id": "2026-02-03-E1-2",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1111
+  },
+  {
+    "id": "2026-02-03-AB-2",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1111
+  },
+  {
+    "id": "2026-02-03-BA-2",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1105
+  },
+  {
+    "id": "2026-02-03-BC-2",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1111
+  },
+  {
+    "id": "2026-02-03-CO-2",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1117
+  },
+  {
+    "id": "2026-02-03-E2-2",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1109
+  },
+  {
+    "id": "2026-02-03-E1-3",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1116
+  },
+  {
+    "id": "2026-02-03-AB-3",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1118
+  },
+  {
+    "id": "2026-02-03-BA-3",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1109
+  },
+  {
+    "id": "2026-02-03-BC-3",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1118
+  },
+  {
+    "id": "2026-02-03-CO-3",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1125
+  },
+  {
+    "id": "2026-02-03-E2-3",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1115
+  },
+  {
+    "id": "2026-02-03-E1-4",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1122
+  },
+  {
+    "id": "2026-02-03-BA-4",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1111
+  },
+  {
+    "id": "2026-02-03-BC-4",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1122
+  },
+  {
+    "id": "2026-02-03-E2-4",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1119
+  },
+  {
+    "id": "2026-02-03-E1-5",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1129
+  },
+  {
+    "id": "2026-02-03-AB-5",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1127
+  },
+  {
+    "id": "2026-02-03-BA-5",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1114
+  },
+  {
+    "id": "2026-02-03-BC-5",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1127
+  },
+  {
+    "id": "2026-02-03-CO-5",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1144
+  },
+  {
+    "id": "2026-02-03-E2-5",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1124
+  },
+  {
+    "id": "2026-02-03-E1-6",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1133
+  },
+  {
+    "id": "2026-02-03-AB-6",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1133
+  },
+  {
+    "id": "2026-02-03-BA-6",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1115
+  },
+  {
+    "id": "2026-02-03-BC-6",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1130
+  },
+  {
+    "id": "2026-02-03-CO-6",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1151
+  },
+  {
+    "id": "2026-02-03-E2-6",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1130
+  },
+  {
+    "id": "2026-02-03-E1-7",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1138
+  },
+  {
+    "id": "2026-02-03-AB-7",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1140
+  },
+  {
+    "id": "2026-02-03-BA-7",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1117
+  },
+  {
+    "id": "2026-02-03-BC-7",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1137
+  },
+  {
+    "id": "2026-02-03-CO-7",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1159
+  },
+  {
+    "id": "2026-02-03-E2-7",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1134
+  },
+  {
+    "id": "2026-02-03-E1-8",
+    "day": "2026-02-03",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1144
+  },
+  {
+    "id": "2026-02-03-AB-8",
+    "day": "2026-02-03",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1144
+  },
+  {
+    "id": "2026-02-03-BA-8",
+    "day": "2026-02-03",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1118
+  },
+  {
+    "id": "2026-02-03-BC-8",
+    "day": "2026-02-03",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1139
+  },
+  {
+    "id": "2026-02-03-CO-8",
+    "day": "2026-02-03",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1168
+  },
+  {
+    "id": "2026-02-03-E2-8",
+    "day": "2026-02-03",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1139
+  },
+  {
+    "id": "2026-02-04-E1-0",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-AB-0",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-BA-0",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-BC-0",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-CO-0",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-E2-0",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1150
+  },
+  {
+    "id": "2026-02-04-E1-1",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1154
+  },
+  {
+    "id": "2026-02-04-AB-1",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1157
+  },
+  {
+    "id": "2026-02-04-BA-1",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1153
+  },
+  {
+    "id": "2026-02-04-BC-1",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1157
+  },
+  {
+    "id": "2026-02-04-CO-1",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1157
+  },
+  {
+    "id": "2026-02-04-E2-1",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1155
+  },
+  {
+    "id": "2026-02-04-E1-2",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1159
+  },
+  {
+    "id": "2026-02-04-AB-2",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1161
+  },
+  {
+    "id": "2026-02-04-BA-2",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1157
+  },
+  {
+    "id": "2026-02-04-BC-2",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1161
+  },
+  {
+    "id": "2026-02-04-CO-2",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1165
+  },
+  {
+    "id": "2026-02-04-E2-2",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1161
+  },
+  {
+    "id": "2026-02-04-E1-3",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1165
+  },
+  {
+    "id": "2026-02-04-BA-3",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1159
+  },
+  {
+    "id": "2026-02-04-BC-3",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1166
+  },
+  {
+    "id": "2026-02-04-E2-3",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1165
+  },
+  {
+    "id": "2026-02-04-E1-4",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1172
+  },
+  {
+    "id": "2026-02-04-AB-4",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1172
+  },
+  {
+    "id": "2026-02-04-BA-4",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1162
+  },
+  {
+    "id": "2026-02-04-BC-4",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1172
+  },
+  {
+    "id": "2026-02-04-CO-4",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1184
+  },
+  {
+    "id": "2026-02-04-E2-4",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1170
+  },
+  {
+    "id": "2026-02-04-E1-5",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1176
+  },
+  {
+    "id": "2026-02-04-AB-5",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1179
+  },
+  {
+    "id": "2026-02-04-BA-5",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1166
+  },
+  {
+    "id": "2026-02-04-BC-5",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1179
+  },
+  {
+    "id": "2026-02-04-CO-5",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1191
+  },
+  {
+    "id": "2026-02-04-E2-5",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1176
+  },
+  {
+    "id": "2026-02-04-E1-6",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1181
+  },
+  {
+    "id": "2026-02-04-AB-6",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1183
+  },
+  {
+    "id": "2026-02-04-BA-6",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1166
+  },
+  {
+    "id": "2026-02-04-BC-6",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1181
+  },
+  {
+    "id": "2026-02-04-CO-6",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1199
+  },
+  {
+    "id": "2026-02-04-E2-6",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1180
+  },
+  {
+    "id": "2026-02-04-E1-7",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1187
+  },
+  {
+    "id": "2026-02-04-AB-7",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1188
+  },
+  {
+    "id": "2026-02-04-BA-7",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1168
+  },
+  {
+    "id": "2026-02-04-BC-7",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1185
+  },
+  {
+    "id": "2026-02-04-CO-7",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1208
+  },
+  {
+    "id": "2026-02-04-E2-7",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1185
+  },
+  {
+    "id": "2026-02-04-E1-8",
+    "day": "2026-02-04",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1194
+  },
+  {
+    "id": "2026-02-04-AB-8",
+    "day": "2026-02-04",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1194
+  },
+  {
+    "id": "2026-02-04-BA-8",
+    "day": "2026-02-04",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1169
+  },
+  {
+    "id": "2026-02-04-BC-8",
+    "day": "2026-02-04",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1188
+  },
+  {
+    "id": "2026-02-04-CO-8",
+    "day": "2026-02-04",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1218
+  },
+  {
+    "id": "2026-02-04-E2-8",
+    "day": "2026-02-04",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1191
+  },
+  {
+    "id": "2026-02-05-E1-0",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-AB-0",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-BA-0",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-BC-0",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-CO-0",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-E2-0",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1200
+  },
+  {
+    "id": "2026-02-05-E1-1",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1205
+  },
+  {
+    "id": "2026-02-05-AB-1",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1205
+  },
+  {
+    "id": "2026-02-05-BA-1",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1204
+  },
+  {
+    "id": "2026-02-05-BC-1",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1205
+  },
+  {
+    "id": "2026-02-05-CO-1",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1208
+  },
+  {
+    "id": "2026-02-05-E2-1",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1206
+  },
+  {
+    "id": "2026-02-05-E1-2",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1211
+  },
+  {
+    "id": "2026-02-05-BA-2",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1206
+  },
+  {
+    "id": "2026-02-05-BC-2",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1211
+  },
+  {
+    "id": "2026-02-05-E2-2",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1210
+  },
+  {
+    "id": "2026-02-05-E1-3",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1218
+  },
+  {
+    "id": "2026-02-05-AB-3",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1218
+  },
+  {
+    "id": "2026-02-05-BA-3",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1209
+  },
+  {
+    "id": "2026-02-05-BC-3",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1218
+  },
+  {
+    "id": "2026-02-05-CO-3",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1227
+  },
+  {
+    "id": "2026-02-05-E2-3",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1215
+  },
+  {
+    "id": "2026-02-05-E1-4",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1222
+  },
+  {
+    "id": "2026-02-05-AB-4",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1222
+  },
+  {
+    "id": "2026-02-05-BA-4",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1213
+  },
+  {
+    "id": "2026-02-05-BC-4",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1222
+  },
+  {
+    "id": "2026-02-05-CO-4",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1234
+  },
+  {
+    "id": "2026-02-05-E2-4",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1221
+  },
+  {
+    "id": "2026-02-05-E1-5",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1227
+  },
+  {
+    "id": "2026-02-05-AB-5",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1227
+  },
+  {
+    "id": "2026-02-05-BA-5",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1215
+  },
+  {
+    "id": "2026-02-05-BC-5",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1227
+  },
+  {
+    "id": "2026-02-05-CO-5",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1242
+  },
+  {
+    "id": "2026-02-05-E2-5",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1225
+  },
+  {
+    "id": "2026-02-05-E1-6",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1233
+  },
+  {
+    "id": "2026-02-05-AB-6",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1233
+  },
+  {
+    "id": "2026-02-05-BA-6",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1217
+  },
+  {
+    "id": "2026-02-05-BC-6",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1232
+  },
+  {
+    "id": "2026-02-05-CO-6",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1251
+  },
+  {
+    "id": "2026-02-05-E2-6",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1230
+  },
+  {
+    "id": "2026-02-05-E1-7",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1240
+  },
+  {
+    "id": "2026-02-05-AB-7",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1240
+  },
+  {
+    "id": "2026-02-05-BA-7",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1218
+  },
+  {
+    "id": "2026-02-05-BC-7",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1236
+  },
+  {
+    "id": "2026-02-05-CO-7",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1261
+  },
+  {
+    "id": "2026-02-05-E2-7",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1236
+  },
+  {
+    "id": "2026-02-05-E1-8",
+    "day": "2026-02-05",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1244
+  },
+  {
+    "id": "2026-02-05-AB-8",
+    "day": "2026-02-05",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1244
+  },
+  {
+    "id": "2026-02-05-BA-8",
+    "day": "2026-02-05",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1220
+  },
+  {
+    "id": "2026-02-05-BC-8",
+    "day": "2026-02-05",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1240
+  },
+  {
+    "id": "2026-02-05-CO-8",
+    "day": "2026-02-05",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1268
+  },
+  {
+    "id": "2026-02-05-E2-8",
+    "day": "2026-02-05",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1240
+  },
+  {
+    "id": "2026-02-06-E1-0",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-AB-0",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-BA-0",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-BC-0",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-CO-0",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-E2-0",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1250
+  },
+  {
+    "id": "2026-02-06-E1-1",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1256
+  },
+  {
+    "id": "2026-02-06-BA-1",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1252
+  },
+  {
+    "id": "2026-02-06-BC-1",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1257
+  },
+  {
+    "id": "2026-02-06-E2-1",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1254
+  },
+  {
+    "id": "2026-02-06-E1-2",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1263
+  },
+  {
+    "id": "2026-02-06-AB-2",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1261
+  },
+  {
+    "id": "2026-02-06-BA-2",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1255
+  },
+  {
+    "id": "2026-02-06-BC-2",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1261
+  },
+  {
+    "id": "2026-02-06-CO-2",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1269
+  },
+  {
+    "id": "2026-02-06-E2-2",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1259
+  },
+  {
+    "id": "2026-02-06-E1-3",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1267
+  },
+  {
+    "id": "2026-02-06-AB-3",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1266
+  },
+  {
+    "id": "2026-02-06-BA-3",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1259
+  },
+  {
+    "id": "2026-02-06-BC-3",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1266
+  },
+  {
+    "id": "2026-02-06-CO-3",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1276
+  },
+  {
+    "id": "2026-02-06-E2-3",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1265
+  },
+  {
+    "id": "2026-02-06-E1-4",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1272
+  },
+  {
+    "id": "2026-02-06-AB-4",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1272
+  },
+  {
+    "id": "2026-02-06-BA-4",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1261
+  },
+  {
+    "id": "2026-02-06-BC-4",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1272
+  },
+  {
+    "id": "2026-02-06-CO-4",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1284
+  },
+  {
+    "id": "2026-02-06-E2-4",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1269
+  },
+  {
+    "id": "2026-02-06-E1-5",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1278
+  },
+  {
+    "id": "2026-02-06-AB-5",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1279
+  },
+  {
+    "id": "2026-02-06-BA-5",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1263
+  },
+  {
+    "id": "2026-02-06-BC-5",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1278
+  },
+  {
+    "id": "2026-02-06-CO-5",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1293
+  },
+  {
+    "id": "2026-02-06-E2-5",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1274
+  },
+  {
+    "id": "2026-02-06-E1-6",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1285
+  },
+  {
+    "id": "2026-02-06-AB-6",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1283
+  },
+  {
+    "id": "2026-02-06-BA-6",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1264
+  },
+  {
+    "id": "2026-02-06-BC-6",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1279
+  },
+  {
+    "id": "2026-02-06-CO-6",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1303
+  },
+  {
+    "id": "2026-02-06-E2-6",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1280
+  },
+  {
+    "id": "2026-02-06-E1-7",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1289
+  },
+  {
+    "id": "2026-02-06-BA-7",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1266
+  },
+  {
+    "id": "2026-02-06-BC-7",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1284
+  },
+  {
+    "id": "2026-02-06-E2-7",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1284
+  },
+  {
+    "id": "2026-02-06-E1-8",
+    "day": "2026-02-06",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1294
+  },
+  {
+    "id": "2026-02-06-AB-8",
+    "day": "2026-02-06",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1294
+  },
+  {
+    "id": "2026-02-06-BA-8",
+    "day": "2026-02-06",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1267
+  },
+  {
+    "id": "2026-02-06-BC-8",
+    "day": "2026-02-06",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1288
+  },
+  {
+    "id": "2026-02-06-CO-8",
+    "day": "2026-02-06",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1318
+  },
+  {
+    "id": "2026-02-06-E2-8",
+    "day": "2026-02-06",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1289
+  },
+  {
+    "id": "2026-02-07-E1-0",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-AB-0",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-BA-0",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-BC-0",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-CO-0",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-E2-0",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1300
+  },
+  {
+    "id": "2026-02-07-E1-1",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1307
+  },
+  {
+    "id": "2026-02-07-AB-1",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1305
+  },
+  {
+    "id": "2026-02-07-BA-1",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1303
+  },
+  {
+    "id": "2026-02-07-BC-1",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1305
+  },
+  {
+    "id": "2026-02-07-CO-1",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1310
+  },
+  {
+    "id": "2026-02-07-E2-1",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1305
+  },
+  {
+    "id": "2026-02-07-E1-2",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1311
+  },
+  {
+    "id": "2026-02-07-AB-2",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1311
+  },
+  {
+    "id": "2026-02-07-BA-2",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1307
+  },
+  {
+    "id": "2026-02-07-BC-2",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1311
+  },
+  {
+    "id": "2026-02-07-CO-2",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1317
+  },
+  {
+    "id": "2026-02-07-E2-2",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1311
+  },
+  {
+    "id": "2026-02-07-E1-3",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1316
+  },
+  {
+    "id": "2026-02-07-AB-3",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1318
+  },
+  {
+    "id": "2026-02-07-BA-3",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1309
+  },
+  {
+    "id": "2026-02-07-BC-3",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1318
+  },
+  {
+    "id": "2026-02-07-CO-3",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1325
+  },
+  {
+    "id": "2026-02-07-E2-3",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1315
+  },
+  {
+    "id": "2026-02-07-E1-4",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1322
+  },
+  {
+    "id": "2026-02-07-AB-4",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1322
+  },
+  {
+    "id": "2026-02-07-BA-4",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1312
+  },
+  {
+    "id": "2026-02-07-BC-4",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1322
+  },
+  {
+    "id": "2026-02-07-CO-4",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1334
+  },
+  {
+    "id": "2026-02-07-E2-4",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1320
+  },
+  {
+    "id": "2026-02-07-E1-5",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1329
+  },
+  {
+    "id": "2026-02-07-AB-5",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1327
+  },
+  {
+    "id": "2026-02-07-BA-5",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1314
+  },
+  {
+    "id": "2026-02-07-BC-5",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1325
+  },
+  {
+    "id": "2026-02-07-CO-5",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1344
+  },
+  {
+    "id": "2026-02-07-E2-5",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1326
+  },
+  {
+    "id": "2026-02-07-E1-6",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1333
+  },
+  {
+    "id": "2026-02-07-BA-6",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1316
+  },
+  {
+    "id": "2026-02-07-BC-6",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1331
+  },
+  {
+    "id": "2026-02-07-E2-6",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1330
+  },
+  {
+    "id": "2026-02-07-E1-7",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1338
+  },
+  {
+    "id": "2026-02-07-AB-7",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1340
+  },
+  {
+    "id": "2026-02-07-BA-7",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1316
+  },
+  {
+    "id": "2026-02-07-BC-7",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1335
+  },
+  {
+    "id": "2026-02-07-CO-7",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1359
+  },
+  {
+    "id": "2026-02-07-E2-7",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1335
+  },
+  {
+    "id": "2026-02-07-E1-8",
+    "day": "2026-02-07",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1344
+  },
+  {
+    "id": "2026-02-07-AB-8",
+    "day": "2026-02-07",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1344
+  },
+  {
+    "id": "2026-02-07-BA-8",
+    "day": "2026-02-07",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1319
+  },
+  {
+    "id": "2026-02-07-BC-8",
+    "day": "2026-02-07",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1338
+  },
+  {
+    "id": "2026-02-07-CO-8",
+    "day": "2026-02-07",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1368
+  },
+  {
+    "id": "2026-02-07-E2-8",
+    "day": "2026-02-07",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1341
+  },
+  {
+    "id": "2026-02-08-E1-0",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-AB-0",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-BA-0",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-BC-0",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-CO-0",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-E2-0",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1350
+  },
+  {
+    "id": "2026-02-08-E1-1",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1354
+  },
+  {
+    "id": "2026-02-08-AB-1",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1357
+  },
+  {
+    "id": "2026-02-08-BA-1",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1354
+  },
+  {
+    "id": "2026-02-08-BC-1",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1357
+  },
+  {
+    "id": "2026-02-08-CO-1",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1357
+  },
+  {
+    "id": "2026-02-08-E2-1",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1356
+  },
+  {
+    "id": "2026-02-08-E1-2",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1359
+  },
+  {
+    "id": "2026-02-08-AB-2",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1361
+  },
+  {
+    "id": "2026-02-08-BA-2",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1356
+  },
+  {
+    "id": "2026-02-08-BC-2",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1361
+  },
+  {
+    "id": "2026-02-08-CO-2",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1365
+  },
+  {
+    "id": "2026-02-08-E2-2",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1360
+  },
+  {
+    "id": "2026-02-08-E1-3",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1365
+  },
+  {
+    "id": "2026-02-08-AB-3",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1366
+  },
+  {
+    "id": "2026-02-08-BA-3",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1359
+  },
+  {
+    "id": "2026-02-08-BC-3",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1366
+  },
+  {
+    "id": "2026-02-08-CO-3",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1374
+  },
+  {
+    "id": "2026-02-08-E2-3",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1365
+  },
+  {
+    "id": "2026-02-08-E1-4",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1372
+  },
+  {
+    "id": "2026-02-08-AB-4",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1372
+  },
+  {
+    "id": "2026-02-08-BA-4",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1363
+  },
+  {
+    "id": "2026-02-08-BC-4",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1372
+  },
+  {
+    "id": "2026-02-08-CO-4",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1384
+  },
+  {
+    "id": "2026-02-08-E2-4",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1371
+  },
+  {
+    "id": "2026-02-08-E1-5",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1376
+  },
+  {
+    "id": "2026-02-08-BA-5",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1365
+  },
+  {
+    "id": "2026-02-08-BC-5",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1379
+  },
+  {
+    "id": "2026-02-08-E2-5",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1375
+  },
+  {
+    "id": "2026-02-08-E1-6",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1381
+  },
+  {
+    "id": "2026-02-08-AB-6",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1383
+  },
+  {
+    "id": "2026-02-08-BA-6",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1365
+  },
+  {
+    "id": "2026-02-08-BC-6",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1380
+  },
+  {
+    "id": "2026-02-08-CO-6",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1399
+  },
+  {
+    "id": "2026-02-08-E2-6",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1380
+  },
+  {
+    "id": "2026-02-08-E1-7",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1387
+  },
+  {
+    "id": "2026-02-08-AB-7",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1388
+  },
+  {
+    "id": "2026-02-08-BA-7",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1368
+  },
+  {
+    "id": "2026-02-08-BC-7",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1384
+  },
+  {
+    "id": "2026-02-08-CO-7",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1408
+  },
+  {
+    "id": "2026-02-08-E2-7",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1386
+  },
+  {
+    "id": "2026-02-08-E1-8",
+    "day": "2026-02-08",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1394
+  },
+  {
+    "id": "2026-02-08-AB-8",
+    "day": "2026-02-08",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1394
+  },
+  {
+    "id": "2026-02-08-BA-8",
+    "day": "2026-02-08",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1369
+  },
+  {
+    "id": "2026-02-08-BC-8",
+    "day": "2026-02-08",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1389
+  },
+  {
+    "id": "2026-02-08-CO-8",
+    "day": "2026-02-08",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-08-E2-8",
+    "day": "2026-02-08",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1390
+  },
+  {
+    "id": "2026-02-09-E1-0",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-AB-0",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-BA-0",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-BC-0",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-CO-0",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-E2-0",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1400
+  },
+  {
+    "id": "2026-02-09-E1-1",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1405
+  },
+  {
+    "id": "2026-02-09-AB-1",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1405
+  },
+  {
+    "id": "2026-02-09-BA-1",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1402
+  },
+  {
+    "id": "2026-02-09-BC-1",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1405
+  },
+  {
+    "id": "2026-02-09-CO-1",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1408
+  },
+  {
+    "id": "2026-02-09-E2-1",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1404
+  },
+  {
+    "id": "2026-02-09-E1-2",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1411
+  },
+  {
+    "id": "2026-02-09-AB-2",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1411
+  },
+  {
+    "id": "2026-02-09-BA-2",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1405
+  },
+  {
+    "id": "2026-02-09-BC-2",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1411
+  },
+  {
+    "id": "2026-02-09-CO-2",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1417
+  },
+  {
+    "id": "2026-02-09-E2-2",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1409
+  },
+  {
+    "id": "2026-02-09-E1-3",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-09-AB-3",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-09-BA-3",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1409
+  },
+  {
+    "id": "2026-02-09-BC-3",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-09-CO-3",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1427
+  },
+  {
+    "id": "2026-02-09-E2-3",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1415
+  },
+  {
+    "id": "2026-02-09-E1-4",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1422
+  },
+  {
+    "id": "2026-02-09-BA-4",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1411
+  },
+  {
+    "id": "2026-02-09-BC-4",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1422
+  },
+  {
+    "id": "2026-02-09-E2-4",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1419
+  },
+  {
+    "id": "2026-02-09-E1-5",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1427
+  },
+  {
+    "id": "2026-02-09-AB-5",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1427
+  },
+  {
+    "id": "2026-02-09-BA-5",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1414
+  },
+  {
+    "id": "2026-02-09-BC-5",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1427
+  },
+  {
+    "id": "2026-02-09-CO-5",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1442
+  },
+  {
+    "id": "2026-02-09-E2-5",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1424
+  },
+  {
+    "id": "2026-02-09-E1-6",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1433
+  },
+  {
+    "id": "2026-02-09-AB-6",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1433
+  },
+  {
+    "id": "2026-02-09-BA-6",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1416
+  },
+  {
+    "id": "2026-02-09-BC-6",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1431
+  },
+  {
+    "id": "2026-02-09-CO-6",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1451
+  },
+  {
+    "id": "2026-02-09-E2-6",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1430
+  },
+  {
+    "id": "2026-02-09-E1-7",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1440
+  },
+  {
+    "id": "2026-02-09-AB-7",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1440
+  },
+  {
+    "id": "2026-02-09-BA-7",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-09-BC-7",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1438
+  },
+  {
+    "id": "2026-02-09-CO-7",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1461
+  },
+  {
+    "id": "2026-02-09-E2-7",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1434
+  },
+  {
+    "id": "2026-02-09-E1-8",
+    "day": "2026-02-09",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1444
+  },
+  {
+    "id": "2026-02-09-AB-8",
+    "day": "2026-02-09",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1444
+  },
+  {
+    "id": "2026-02-09-BA-8",
+    "day": "2026-02-09",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1418
+  },
+  {
+    "id": "2026-02-09-BC-8",
+    "day": "2026-02-09",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1439
+  },
+  {
+    "id": "2026-02-09-CO-8",
+    "day": "2026-02-09",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1468
+  },
+  {
+    "id": "2026-02-09-E2-8",
+    "day": "2026-02-09",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1439
+  },
+  {
+    "id": "2026-02-10-E1-0",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-AB-0",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-BA-0",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-BC-0",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-CO-0",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-E2-0",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1450
+  },
+  {
+    "id": "2026-02-10-E1-1",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1456
+  },
+  {
+    "id": "2026-02-10-AB-1",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1457
+  },
+  {
+    "id": "2026-02-10-BA-1",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1453
+  },
+  {
+    "id": "2026-02-10-BC-1",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1457
+  },
+  {
+    "id": "2026-02-10-CO-1",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1459
+  },
+  {
+    "id": "2026-02-10-E2-1",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1455
+  },
+  {
+    "id": "2026-02-10-E1-2",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1463
+  },
+  {
+    "id": "2026-02-10-AB-2",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1461
+  },
+  {
+    "id": "2026-02-10-BA-2",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1457
+  },
+  {
+    "id": "2026-02-10-BC-2",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1461
+  },
+  {
+    "id": "2026-02-10-CO-2",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1469
+  },
+  {
+    "id": "2026-02-10-E2-2",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1461
+  },
+  {
+    "id": "2026-02-10-E1-3",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1467
+  },
+  {
+    "id": "2026-02-10-BA-3",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1459
+  },
+  {
+    "id": "2026-02-10-BC-3",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1466
+  },
+  {
+    "id": "2026-02-10-E2-3",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1465
+  },
+  {
+    "id": "2026-02-10-E1-4",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1472
+  },
+  {
+    "id": "2026-02-10-AB-4",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1472
+  },
+  {
+    "id": "2026-02-10-BA-4",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1462
+  },
+  {
+    "id": "2026-02-10-BC-4",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1472
+  },
+  {
+    "id": "2026-02-10-CO-4",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1484
+  },
+  {
+    "id": "2026-02-10-E2-4",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1470
+  },
+  {
+    "id": "2026-02-10-E1-5",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1478
+  },
+  {
+    "id": "2026-02-10-AB-5",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1479
+  },
+  {
+    "id": "2026-02-10-BA-5",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1466
+  },
+  {
+    "id": "2026-02-10-BC-5",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1479
+  },
+  {
+    "id": "2026-02-10-CO-5",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1493
+  },
+  {
+    "id": "2026-02-10-E2-5",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1476
+  },
+  {
+    "id": "2026-02-10-E1-6",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1485
+  },
+  {
+    "id": "2026-02-10-AB-6",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1483
+  },
+  {
+    "id": "2026-02-10-BA-6",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1467
+  },
+  {
+    "id": "2026-02-10-BC-6",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1482
+  },
+  {
+    "id": "2026-02-10-CO-6",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1503
+  },
+  {
+    "id": "2026-02-10-E2-6",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1480
+  },
+  {
+    "id": "2026-02-10-E1-7",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1489
+  },
+  {
+    "id": "2026-02-10-AB-7",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1488
+  },
+  {
+    "id": "2026-02-10-BA-7",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1468
+  },
+  {
+    "id": "2026-02-10-BC-7",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1485
+  },
+  {
+    "id": "2026-02-10-CO-7",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1510
+  },
+  {
+    "id": "2026-02-10-E2-7",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1485
+  },
+  {
+    "id": "2026-02-10-E1-8",
+    "day": "2026-02-10",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1494
+  },
+  {
+    "id": "2026-02-10-AB-8",
+    "day": "2026-02-10",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1494
+  },
+  {
+    "id": "2026-02-10-BA-8",
+    "day": "2026-02-10",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1470
+  },
+  {
+    "id": "2026-02-10-BC-8",
+    "day": "2026-02-10",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1489
+  },
+  {
+    "id": "2026-02-10-CO-8",
+    "day": "2026-02-10",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1518
+  },
+  {
+    "id": "2026-02-10-E2-8",
+    "day": "2026-02-10",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1491
+  },
+  {
+    "id": "2026-02-11-E1-0",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-AB-0",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-BA-0",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-BC-0",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-CO-0",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-E2-0",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1500
+  },
+  {
+    "id": "2026-02-11-E1-1",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1507
+  },
+  {
+    "id": "2026-02-11-AB-1",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1505
+  },
+  {
+    "id": "2026-02-11-BA-1",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1504
+  },
+  {
+    "id": "2026-02-11-BC-1",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1505
+  },
+  {
+    "id": "2026-02-11-CO-1",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1510
+  },
+  {
+    "id": "2026-02-11-E2-1",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1506
+  },
+  {
+    "id": "2026-02-11-E1-2",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1511
+  },
+  {
+    "id": "2026-02-11-BA-2",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1506
+  },
+  {
+    "id": "2026-02-11-BC-2",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1511
+  },
+  {
+    "id": "2026-02-11-E2-2",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1510
+  },
+  {
+    "id": "2026-02-11-E1-3",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1516
+  },
+  {
+    "id": "2026-02-11-AB-3",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1518
+  },
+  {
+    "id": "2026-02-11-BA-3",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1509
+  },
+  {
+    "id": "2026-02-11-BC-3",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1518
+  },
+  {
+    "id": "2026-02-11-CO-3",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1525
+  },
+  {
+    "id": "2026-02-11-E2-3",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1515
+  },
+  {
+    "id": "2026-02-11-E1-4",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1522
+  },
+  {
+    "id": "2026-02-11-AB-4",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1522
+  },
+  {
+    "id": "2026-02-11-BA-4",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1513
+  },
+  {
+    "id": "2026-02-11-BC-4",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1522
+  },
+  {
+    "id": "2026-02-11-CO-4",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1534
+  },
+  {
+    "id": "2026-02-11-E2-4",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1521
+  },
+  {
+    "id": "2026-02-11-E1-5",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1529
+  },
+  {
+    "id": "2026-02-11-AB-5",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1527
+  },
+  {
+    "id": "2026-02-11-BA-5",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1513
+  },
+  {
+    "id": "2026-02-11-BC-5",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1525
+  },
+  {
+    "id": "2026-02-11-CO-5",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1544
+  },
+  {
+    "id": "2026-02-11-E2-5",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1525
+  },
+  {
+    "id": "2026-02-11-E1-6",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1533
+  },
+  {
+    "id": "2026-02-11-AB-6",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1533
+  },
+  {
+    "id": "2026-02-11-BA-6",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1515
+  },
+  {
+    "id": "2026-02-11-BC-6",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1530
+  },
+  {
+    "id": "2026-02-11-CO-6",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1551
+  },
+  {
+    "id": "2026-02-11-E2-6",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1530
+  },
+  {
+    "id": "2026-02-11-E1-7",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1538
+  },
+  {
+    "id": "2026-02-11-AB-7",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1540
+  },
+  {
+    "id": "2026-02-11-BA-7",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1516
+  },
+  {
+    "id": "2026-02-11-BC-7",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1534
+  },
+  {
+    "id": "2026-02-11-CO-7",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1559
+  },
+  {
+    "id": "2026-02-11-E2-7",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1536
+  },
+  {
+    "id": "2026-02-11-E1-8",
+    "day": "2026-02-11",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1544
+  },
+  {
+    "id": "2026-02-11-AB-8",
+    "day": "2026-02-11",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1544
+  },
+  {
+    "id": "2026-02-11-BA-8",
+    "day": "2026-02-11",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1518
+  },
+  {
+    "id": "2026-02-11-BC-8",
+    "day": "2026-02-11",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1538
+  },
+  {
+    "id": "2026-02-11-CO-8",
+    "day": "2026-02-11",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1568
+  },
+  {
+    "id": "2026-02-11-E2-8",
+    "day": "2026-02-11",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1540
+  },
+  {
+    "id": "2026-02-12-E1-0",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-AB-0",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-BA-0",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-BC-0",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-CO-0",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-E2-0",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1550
+  },
+  {
+    "id": "2026-02-12-E1-1",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1554
+  },
+  {
+    "id": "2026-02-12-BA-1",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1552
+  },
+  {
+    "id": "2026-02-12-BC-1",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1557
+  },
+  {
+    "id": "2026-02-12-E2-1",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1554
+  },
+  {
+    "id": "2026-02-12-E1-2",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1559
+  },
+  {
+    "id": "2026-02-12-AB-2",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1561
+  },
+  {
+    "id": "2026-02-12-BA-2",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1555
+  },
+  {
+    "id": "2026-02-12-BC-2",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1561
+  },
+  {
+    "id": "2026-02-12-CO-2",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1565
+  },
+  {
+    "id": "2026-02-12-E2-2",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1559
+  },
+  {
+    "id": "2026-02-12-E1-3",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1565
+  },
+  {
+    "id": "2026-02-12-AB-3",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1566
+  },
+  {
+    "id": "2026-02-12-BA-3",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1559
+  },
+  {
+    "id": "2026-02-12-BC-3",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1566
+  },
+  {
+    "id": "2026-02-12-CO-3",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1574
+  },
+  {
+    "id": "2026-02-12-E2-3",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1565
+  },
+  {
+    "id": "2026-02-12-E1-4",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1572
+  },
+  {
+    "id": "2026-02-12-AB-4",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1572
+  },
+  {
+    "id": "2026-02-12-BA-4",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1561
+  },
+  {
+    "id": "2026-02-12-BC-4",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1572
+  },
+  {
+    "id": "2026-02-12-CO-4",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1584
+  },
+  {
+    "id": "2026-02-12-E2-4",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1569
+  },
+  {
+    "id": "2026-02-12-E1-5",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1576
+  },
+  {
+    "id": "2026-02-12-AB-5",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1579
+  },
+  {
+    "id": "2026-02-12-BA-5",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1564
+  },
+  {
+    "id": "2026-02-12-BC-5",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1579
+  },
+  {
+    "id": "2026-02-12-CO-5",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1591
+  },
+  {
+    "id": "2026-02-12-E2-5",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1574
+  },
+  {
+    "id": "2026-02-12-E1-6",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1581
+  },
+  {
+    "id": "2026-02-12-AB-6",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1583
+  },
+  {
+    "id": "2026-02-12-BA-6",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1564
+  },
+  {
+    "id": "2026-02-12-BC-6",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1579
+  },
+  {
+    "id": "2026-02-12-CO-6",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1599
+  },
+  {
+    "id": "2026-02-12-E2-6",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1580
+  },
+  {
+    "id": "2026-02-12-E1-7",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1587
+  },
+  {
+    "id": "2026-02-12-BA-7",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1566
+  },
+  {
+    "id": "2026-02-12-BC-7",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1584
+  },
+  {
+    "id": "2026-02-12-E2-7",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1584
+  },
+  {
+    "id": "2026-02-12-E1-8",
+    "day": "2026-02-12",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1594
+  },
+  {
+    "id": "2026-02-12-AB-8",
+    "day": "2026-02-12",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1594
+  },
+  {
+    "id": "2026-02-12-BA-8",
+    "day": "2026-02-12",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1568
+  },
+  {
+    "id": "2026-02-12-BC-8",
+    "day": "2026-02-12",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1589
+  },
+  {
+    "id": "2026-02-12-CO-8",
+    "day": "2026-02-12",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1618
+  },
+  {
+    "id": "2026-02-12-E2-8",
+    "day": "2026-02-12",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1589
+  },
+  {
+    "id": "2026-02-13-E1-0",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-AB-0",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-BA-0",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-BC-0",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-CO-0",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-E2-0",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1600
+  },
+  {
+    "id": "2026-02-13-E1-1",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1605
+  },
+  {
+    "id": "2026-02-13-AB-1",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1605
+  },
+  {
+    "id": "2026-02-13-BA-1",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1603
+  },
+  {
+    "id": "2026-02-13-BC-1",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1605
+  },
+  {
+    "id": "2026-02-13-CO-1",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1608
+  },
+  {
+    "id": "2026-02-13-E2-1",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1605
+  },
+  {
+    "id": "2026-02-13-E1-2",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1611
+  },
+  {
+    "id": "2026-02-13-AB-2",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1611
+  },
+  {
+    "id": "2026-02-13-BA-2",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1607
+  },
+  {
+    "id": "2026-02-13-BC-2",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1611
+  },
+  {
+    "id": "2026-02-13-CO-2",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1617
+  },
+  {
+    "id": "2026-02-13-E2-2",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1611
+  },
+  {
+    "id": "2026-02-13-E1-3",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1618
+  },
+  {
+    "id": "2026-02-13-AB-3",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1618
+  },
+  {
+    "id": "2026-02-13-BA-3",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1609
+  },
+  {
+    "id": "2026-02-13-BC-3",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1618
+  },
+  {
+    "id": "2026-02-13-CO-3",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1627
+  },
+  {
+    "id": "2026-02-13-E2-3",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1615
+  },
+  {
+    "id": "2026-02-13-E1-4",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1622
+  },
+  {
+    "id": "2026-02-13-AB-4",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1622
+  },
+  {
+    "id": "2026-02-13-BA-4",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1612
+  },
+  {
+    "id": "2026-02-13-BC-4",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1622
+  },
+  {
+    "id": "2026-02-13-CO-4",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1634
+  },
+  {
+    "id": "2026-02-13-E2-4",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1620
+  },
+  {
+    "id": "2026-02-13-E1-5",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1627
+  },
+  {
+    "id": "2026-02-13-AB-5",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1627
+  },
+  {
+    "id": "2026-02-13-BA-5",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1615
+  },
+  {
+    "id": "2026-02-13-BC-5",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1626
+  },
+  {
+    "id": "2026-02-13-CO-5",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1642
+  },
+  {
+    "id": "2026-02-13-E2-5",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1626
+  },
+  {
+    "id": "2026-02-13-E1-6",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1633
+  },
+  {
+    "id": "2026-02-13-BA-6",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1616
+  },
+  {
+    "id": "2026-02-13-BC-6",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1631
+  },
+  {
+    "id": "2026-02-13-E2-6",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1630
+  },
+  {
+    "id": "2026-02-13-E1-7",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1640
+  },
+  {
+    "id": "2026-02-13-AB-7",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1640
+  },
+  {
+    "id": "2026-02-13-BA-7",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1617
+  },
+  {
+    "id": "2026-02-13-BC-7",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1636
+  },
+  {
+    "id": "2026-02-13-CO-7",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1661
+  },
+  {
+    "id": "2026-02-13-E2-7",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1635
+  },
+  {
+    "id": "2026-02-13-E1-8",
+    "day": "2026-02-13",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1644
+  },
+  {
+    "id": "2026-02-13-AB-8",
+    "day": "2026-02-13",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1644
+  },
+  {
+    "id": "2026-02-13-BA-8",
+    "day": "2026-02-13",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1619
+  },
+  {
+    "id": "2026-02-13-BC-8",
+    "day": "2026-02-13",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1638
+  },
+  {
+    "id": "2026-02-13-CO-8",
+    "day": "2026-02-13",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1668
+  },
+  {
+    "id": "2026-02-13-E2-8",
+    "day": "2026-02-13",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1641
+  },
+  {
+    "id": "2026-02-14-E1-0",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-AB-0",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-BA-0",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-BC-0",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-CO-0",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-E2-0",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1650
+  },
+  {
+    "id": "2026-02-14-E1-1",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1656
+  },
+  {
+    "id": "2026-02-14-AB-1",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1657
+  },
+  {
+    "id": "2026-02-14-BA-1",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1654
+  },
+  {
+    "id": "2026-02-14-BC-1",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1657
+  },
+  {
+    "id": "2026-02-14-CO-1",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1659
+  },
+  {
+    "id": "2026-02-14-E2-1",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1656
+  },
+  {
+    "id": "2026-02-14-E1-2",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1663
+  },
+  {
+    "id": "2026-02-14-AB-2",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1661
+  },
+  {
+    "id": "2026-02-14-BA-2",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1656
+  },
+  {
+    "id": "2026-02-14-BC-2",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1661
+  },
+  {
+    "id": "2026-02-14-CO-2",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1669
+  },
+  {
+    "id": "2026-02-14-E2-2",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1660
+  },
+  {
+    "id": "2026-02-14-E1-3",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1667
+  },
+  {
+    "id": "2026-02-14-AB-3",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1666
+  },
+  {
+    "id": "2026-02-14-BA-3",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1659
+  },
+  {
+    "id": "2026-02-14-BC-3",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1666
+  },
+  {
+    "id": "2026-02-14-CO-3",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1676
+  },
+  {
+    "id": "2026-02-14-E2-3",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1665
+  },
+  {
+    "id": "2026-02-14-E1-4",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1672
+  },
+  {
+    "id": "2026-02-14-AB-4",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1672
+  },
+  {
+    "id": "2026-02-14-BA-4",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1663
+  },
+  {
+    "id": "2026-02-14-BC-4",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1672
+  },
+  {
+    "id": "2026-02-14-CO-4",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1684
+  },
+  {
+    "id": "2026-02-14-E2-4",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1671
+  },
+  {
+    "id": "2026-02-14-E1-5",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1678
+  },
+  {
+    "id": "2026-02-14-BA-5",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1665
+  },
+  {
+    "id": "2026-02-14-BC-5",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1679
+  },
+  {
+    "id": "2026-02-14-E2-5",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1675
+  },
+  {
+    "id": "2026-02-14-E1-6",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1685
+  },
+  {
+    "id": "2026-02-14-AB-6",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1683
+  },
+  {
+    "id": "2026-02-14-BA-6",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1666
+  },
+  {
+    "id": "2026-02-14-BC-6",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1681
+  },
+  {
+    "id": "2026-02-14-CO-6",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1703
+  },
+  {
+    "id": "2026-02-14-E2-6",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1680
+  },
+  {
+    "id": "2026-02-14-E1-7",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1689
+  },
+  {
+    "id": "2026-02-14-AB-7",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1688
+  },
+  {
+    "id": "2026-02-14-BA-7",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1668
+  },
+  {
+    "id": "2026-02-14-BC-7",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1684
+  },
+  {
+    "id": "2026-02-14-CO-7",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1710
+  },
+  {
+    "id": "2026-02-14-E2-7",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1686
+  },
+  {
+    "id": "2026-02-14-E1-8",
+    "day": "2026-02-14",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1694
+  },
+  {
+    "id": "2026-02-14-AB-8",
+    "day": "2026-02-14",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1694
+  },
+  {
+    "id": "2026-02-14-BA-8",
+    "day": "2026-02-14",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1670
+  },
+  {
+    "id": "2026-02-14-BC-8",
+    "day": "2026-02-14",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1690
+  },
+  {
+    "id": "2026-02-14-CO-8",
+    "day": "2026-02-14",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1718
+  },
+  {
+    "id": "2026-02-14-E2-8",
+    "day": "2026-02-14",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1690
+  },
+  {
+    "id": "2026-02-15-E1-0",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-AB-0",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-BA-0",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-BC-0",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-CO-0",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-E2-0",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1700
+  },
+  {
+    "id": "2026-02-15-E1-1",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1707
+  },
+  {
+    "id": "2026-02-15-AB-1",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1705
+  },
+  {
+    "id": "2026-02-15-BA-1",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1702
+  },
+  {
+    "id": "2026-02-15-BC-1",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1705
+  },
+  {
+    "id": "2026-02-15-CO-1",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1710
+  },
+  {
+    "id": "2026-02-15-E2-1",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1704
+  },
+  {
+    "id": "2026-02-15-E1-2",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1711
+  },
+  {
+    "id": "2026-02-15-AB-2",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1711
+  },
+  {
+    "id": "2026-02-15-BA-2",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1705
+  },
+  {
+    "id": "2026-02-15-BC-2",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1711
+  },
+  {
+    "id": "2026-02-15-CO-2",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1717
+  },
+  {
+    "id": "2026-02-15-E2-2",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1709
+  },
+  {
+    "id": "2026-02-15-E1-3",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1716
+  },
+  {
+    "id": "2026-02-15-AB-3",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1718
+  },
+  {
+    "id": "2026-02-15-BA-3",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1709
+  },
+  {
+    "id": "2026-02-15-BC-3",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1718
+  },
+  {
+    "id": "2026-02-15-CO-3",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1725
+  },
+  {
+    "id": "2026-02-15-E2-3",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1715
+  },
+  {
+    "id": "2026-02-15-E1-4",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1722
+  },
+  {
+    "id": "2026-02-15-BA-4",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1711
+  },
+  {
+    "id": "2026-02-15-BC-4",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1722
+  },
+  {
+    "id": "2026-02-15-E2-4",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1719
+  },
+  {
+    "id": "2026-02-15-E1-5",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1729
+  },
+  {
+    "id": "2026-02-15-AB-5",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1727
+  },
+  {
+    "id": "2026-02-15-BA-5",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1714
+  },
+  {
+    "id": "2026-02-15-BC-5",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1727
+  },
+  {
+    "id": "2026-02-15-CO-5",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1744
+  },
+  {
+    "id": "2026-02-15-E2-5",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1724
+  },
+  {
+    "id": "2026-02-15-E1-6",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1733
+  },
+  {
+    "id": "2026-02-15-AB-6",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1733
+  },
+  {
+    "id": "2026-02-15-BA-6",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1717
+  },
+  {
+    "id": "2026-02-15-BC-6",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1732
+  },
+  {
+    "id": "2026-02-15-CO-6",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1751
+  },
+  {
+    "id": "2026-02-15-E2-6",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1730
+  },
+  {
+    "id": "2026-02-15-E1-7",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1738
+  },
+  {
+    "id": "2026-02-15-AB-7",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1740
+  },
+  {
+    "id": "2026-02-15-BA-7",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1718
+  },
+  {
+    "id": "2026-02-15-BC-7",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1738
+  },
+  {
+    "id": "2026-02-15-CO-7",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1759
+  },
+  {
+    "id": "2026-02-15-E2-7",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1734
+  },
+  {
+    "id": "2026-02-15-E1-8",
+    "day": "2026-02-15",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1744
+  },
+  {
+    "id": "2026-02-15-AB-8",
+    "day": "2026-02-15",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1744
+  },
+  {
+    "id": "2026-02-15-BA-8",
+    "day": "2026-02-15",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1719
+  },
+  {
+    "id": "2026-02-15-BC-8",
+    "day": "2026-02-15",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1740
+  },
+  {
+    "id": "2026-02-15-CO-8",
+    "day": "2026-02-15",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1768
+  },
+  {
+    "id": "2026-02-15-E2-8",
+    "day": "2026-02-15",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1739
+  },
+  {
+    "id": "2026-02-16-E1-0",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-AB-0",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-BA-0",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-BC-0",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-CO-0",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-E2-0",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1750
+  },
+  {
+    "id": "2026-02-16-E1-1",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1754
+  },
+  {
+    "id": "2026-02-16-AB-1",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1757
+  },
+  {
+    "id": "2026-02-16-BA-1",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1753
+  },
+  {
+    "id": "2026-02-16-BC-1",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1757
+  },
+  {
+    "id": "2026-02-16-CO-1",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1757
+  },
+  {
+    "id": "2026-02-16-E2-1",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1755
+  },
+  {
+    "id": "2026-02-16-E1-2",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1759
+  },
+  {
+    "id": "2026-02-16-AB-2",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1761
+  },
+  {
+    "id": "2026-02-16-BA-2",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1757
+  },
+  {
+    "id": "2026-02-16-BC-2",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1761
+  },
+  {
+    "id": "2026-02-16-CO-2",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1765
+  },
+  {
+    "id": "2026-02-16-E2-2",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1761
+  },
+  {
+    "id": "2026-02-16-E1-3",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1765
+  },
+  {
+    "id": "2026-02-16-BA-3",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1759
+  },
+  {
+    "id": "2026-02-16-BC-3",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1766
+  },
+  {
+    "id": "2026-02-16-E2-3",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1765
+  },
+  {
+    "id": "2026-02-16-E1-4",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1772
+  },
+  {
+    "id": "2026-02-16-AB-4",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1772
+  },
+  {
+    "id": "2026-02-16-BA-4",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1762
+  },
+  {
+    "id": "2026-02-16-BC-4",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1772
+  },
+  {
+    "id": "2026-02-16-CO-4",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1784
+  },
+  {
+    "id": "2026-02-16-E2-4",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1770
+  },
+  {
+    "id": "2026-02-16-E1-5",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1776
+  },
+  {
+    "id": "2026-02-16-AB-5",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1779
+  },
+  {
+    "id": "2026-02-16-BA-5",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1763
+  },
+  {
+    "id": "2026-02-16-BC-5",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1776
+  },
+  {
+    "id": "2026-02-16-CO-5",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1791
+  },
+  {
+    "id": "2026-02-16-E2-5",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1776
+  },
+  {
+    "id": "2026-02-16-E1-6",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1781
+  },
+  {
+    "id": "2026-02-16-AB-6",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1783
+  },
+  {
+    "id": "2026-02-16-BA-6",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1765
+  },
+  {
+    "id": "2026-02-16-BC-6",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1780
+  },
+  {
+    "id": "2026-02-16-CO-6",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1799
+  },
+  {
+    "id": "2026-02-16-E2-6",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1780
+  },
+  {
+    "id": "2026-02-16-E1-7",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1787
+  },
+  {
+    "id": "2026-02-16-AB-7",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1788
+  },
+  {
+    "id": "2026-02-16-BA-7",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1766
+  },
+  {
+    "id": "2026-02-16-BC-7",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1783
+  },
+  {
+    "id": "2026-02-16-CO-7",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1808
+  },
+  {
+    "id": "2026-02-16-E2-7",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1785
+  },
+  {
+    "id": "2026-02-16-E1-8",
+    "day": "2026-02-16",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1794
+  },
+  {
+    "id": "2026-02-16-AB-8",
+    "day": "2026-02-16",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1794
+  },
+  {
+    "id": "2026-02-16-BA-8",
+    "day": "2026-02-16",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1768
+  },
+  {
+    "id": "2026-02-16-BC-8",
+    "day": "2026-02-16",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1787
+  },
+  {
+    "id": "2026-02-16-CO-8",
+    "day": "2026-02-16",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1818
+  },
+  {
+    "id": "2026-02-16-E2-8",
+    "day": "2026-02-16",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1791
+  },
+  {
+    "id": "2026-02-17-E1-0",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-AB-0",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-BA-0",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 0,
+    "known_at": 1,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-BC-0",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-CO-0",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-E2-0",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 0,
+    "known_at": 0,
+    "cumulative": 1800
+  },
+  {
+    "id": "2026-02-17-E1-1",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1805
+  },
+  {
+    "id": "2026-02-17-AB-1",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1805
+  },
+  {
+    "id": "2026-02-17-BA-1",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1804
+  },
+  {
+    "id": "2026-02-17-BC-1",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1805
+  },
+  {
+    "id": "2026-02-17-CO-1",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1808
+  },
+  {
+    "id": "2026-02-17-E2-1",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 1,
+    "known_at": 1,
+    "cumulative": 1806
+  },
+  {
+    "id": "2026-02-17-E1-2",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1811
+  },
+  {
+    "id": "2026-02-17-BA-2",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1806
+  },
+  {
+    "id": "2026-02-17-BC-2",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1811
+  },
+  {
+    "id": "2026-02-17-E2-2",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 2,
+    "known_at": 2,
+    "cumulative": 1810
+  },
+  {
+    "id": "2026-02-17-E1-3",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1818
+  },
+  {
+    "id": "2026-02-17-AB-3",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1811
+  },
+  {
+    "id": "2026-02-17-BA-3",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 3,
+    "known_at": 4,
+    "cumulative": 1809
+  },
+  {
+    "id": "2026-02-17-BC-3",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1816
+  },
+  {
+    "id": "2026-02-17-CO-3",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1827
+  },
+  {
+    "id": "2026-02-17-E2-3",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 3,
+    "known_at": 3,
+    "cumulative": 1815
+  },
+  {
+    "id": "2026-02-17-E1-4",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1822
+  },
+  {
+    "id": "2026-02-17-AB-4",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1811
+  },
+  {
+    "id": "2026-02-17-BA-4",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1809
+  },
+  {
+    "id": "2026-02-17-BC-4",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1816
+  },
+  {
+    "id": "2026-02-17-CO-4",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1834
+  },
+  {
+    "id": "2026-02-17-E2-4",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 4,
+    "known_at": 4,
+    "cumulative": 1821
+  },
+  {
+    "id": "2026-02-17-E1-5",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1827
+  },
+  {
+    "id": "2026-02-17-AB-5",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1811
+  },
+  {
+    "id": "2026-02-17-BA-5",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1809
+  },
+  {
+    "id": "2026-02-17-BC-5",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1816
+  },
+  {
+    "id": "2026-02-17-CO-5",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1842
+  },
+  {
+    "id": "2026-02-17-E2-5",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 5,
+    "known_at": 5,
+    "cumulative": 1825
+  },
+  {
+    "id": "2026-02-17-E1-6",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1833
+  },
+  {
+    "id": "2026-02-17-AB-6",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1817
+  },
+  {
+    "id": "2026-02-17-BA-6",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 6,
+    "known_at": 7,
+    "cumulative": 1809
+  },
+  {
+    "id": "2026-02-17-BC-6",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1819
+  },
+  {
+    "id": "2026-02-17-CO-6",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1851
+  },
+  {
+    "id": "2026-02-17-E2-6",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 6,
+    "known_at": 6,
+    "cumulative": 1830
+  },
+  {
+    "id": "2026-02-17-E1-7",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1840
+  },
+  {
+    "id": "2026-02-17-AB-7",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1824
+  },
+  {
+    "id": "2026-02-17-BA-7",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1812
+  },
+  {
+    "id": "2026-02-17-BC-7",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1825
+  },
+  {
+    "id": "2026-02-17-CO-7",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1861
+  },
+  {
+    "id": "2026-02-17-E2-7",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 7,
+    "known_at": 7,
+    "cumulative": 1836
+  },
+  {
+    "id": "2026-02-17-E1-8",
+    "day": "2026-02-17",
+    "sensor": "E1",
+    "counter_epoch": "E1-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1844
+  },
+  {
+    "id": "2026-02-17-AB-8",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1828
+  },
+  {
+    "id": "2026-02-17-BA-8",
+    "day": "2026-02-17",
+    "sensor": "BA",
+    "counter_epoch": "BA-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1813
+  },
+  {
+    "id": "2026-02-17-BC-8",
+    "day": "2026-02-17",
+    "sensor": "BC",
+    "counter_epoch": "BC-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1828
+  },
+  {
+    "id": "2026-02-17-CO-8",
+    "day": "2026-02-17",
+    "sensor": "CO",
+    "counter_epoch": "CO-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1868
+  },
+  {
+    "id": "2026-02-17-E2-8",
+    "day": "2026-02-17",
+    "sensor": "E2",
+    "counter_epoch": "E2-01",
+    "observe_time": 8,
+    "known_at": 8,
+    "cumulative": 1840
+  },
+  {
+    "id": "AB-补传",
+    "day": "2026-02-17",
+    "sensor": "AB",
+    "counter_epoch": "AB-01",
+    "observe_time": 4,
+    "known_at": 8,
+    "cumulative": 1811
+  }
+]

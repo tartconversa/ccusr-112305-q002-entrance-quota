@@ -1,29 +1,24 @@
-"""校验可供分析的资料关系。"""
-
 import unittest
 
 from scripts.inspect_sources import read_table
 
 
-class SourceContractTest(unittest.TestCase):
-    def test_source_observations_and_references(self):
-        from collections import defaultdict
-        by_block = defaultdict(list)
-        by_stratum = defaultdict(set)
-        for record in read_table("assignments"):
-            by_block[record["block"]].append(record)
-            by_stratum[record["stratum"]].add(record["level"])
-        self.assertTrue(all(levels == {0,1,2} for levels in by_stratum.values()))
-        for rows in by_block.values():
-            self.assertEqual(len(rows), 8)
-            self.assertEqual(sum(row["invited"] for row in rows), (0,2,5)[rows[0]["level"]])
-        original = {row["group"]:row for row in read_table("assignments")}
-        classes = {row["class"] for row in read_table("classes")}
-        observed = read_table("outcomes")
-        self.assertTrue(any(row["actual_class"] != original[row["group"]]["original_class"] for row in observed))
-        self.assertTrue(all(row["actual_class"] in classes for row in observed))
-        self.assertTrue(all(row["observed_attending"] is None or row["observed_attending"] <= original[row["group"]]["group_size"] for row in observed))
-        self.assertEqual({"满员","关班","未回收"} - {row["endpoint"] for row in observed}, set())
-        received = read_table("applications")
-        self.assertTrue(any(row["paid"] and row["class"] == "P01" for row in received))
-        self.assertTrue(any(row["event"] == "减班" and row["target"] == "P01" for row in read_table("updates")))
+class EntranceDataTest(unittest.TestCase):
+    def test_history_and_cross_gate_movements(self):
+        gates = read_table("gates")
+        counts = read_table("counts")
+        self.assertGreaterEqual(len({row["day"] for row in gates}), 12)
+        self.assertTrue(any(row["kind"] == "区内" for row in counts))
+        routes = {row["route"] for row in read_table("route_map")}
+        self.assertTrue(all(row["sensor"] in routes for row in gates))
+        self.assertTrue(any(row["known_at"] > row["observe_time"] for row in gates))
+
+    def test_reissued_quota_and_late_confirmation_coexist(self):
+        tranches = {(row["tranche"], row["version"]): row for row in read_table("ticket_tranches")}
+        log = read_table("terminal_log")
+        self.assertTrue(all((row["tranche"], row["version"]) in tranches for row in log))
+        self.assertEqual(
+            {row["kind"] for row in log if row["tranche"] == "L1"},
+            {"接收", "接收失败", "出票", "归还", "回执订正"},
+        )
+        self.assertTrue(any(row["stages"] == "已签到在途" for row in read_table("group_tickets")))

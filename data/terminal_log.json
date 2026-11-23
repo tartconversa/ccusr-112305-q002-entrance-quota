@@ -1,0 +1,79 @@
+[
+  {
+    "event": "J1",
+    "tranche": "L1",
+    "version": 1,
+    "terminal": "T-A",
+    "posted": 2,
+    "kind": "接收",
+    "amount": 14,
+    "effective_window": 4,
+    "ref": null
+  },
+  {
+    "event": "J2",
+    "tranche": "L2",
+    "version": 1,
+    "terminal": "T-B",
+    "posted": 3,
+    "kind": "接收",
+    "amount": 10,
+    "effective_window": 4,
+    "ref": null
+  },
+  {
+    "event": "J3",
+    "tranche": "L1",
+    "version": 1,
+    "terminal": "T-A",
+    "posted": 4,
+    "kind": "出票",
+    "amount": 7,
+    "effective_window": 4,
+    "ref": null
+  },
+  {
+    "event": "J4",
+    "tranche": "L1",
+    "version": 2,
+    "terminal": "T-A",
+    "posted": 4,
+    "kind": "接收失败",
+    "amount": 0,
+    "effective_window": 4,
+    "ref": null
+  },
+  {
+    "event": "J5",
+    "tranche": "L1",
+    "version": 1,
+    "terminal": "T-A",
+    "posted": 6,
+    "kind": "归还",
+    "amount": 5,
+    "effective_window": 4,
+    "ref": "J1"
+  },
+  {
+    "event": "J6",
+    "tranche": "L1",
+    "version": 1,
+    "terminal": "T-A",
+    "posted": 7,
+    "kind": "回执订正",
+    "amount": 4,
+    "effective_window": 4,
+    "ref": "J5"
+  },
+  {
+    "event": "J7",
+    "tranche": "L2",
+    "version": 1,
+    "terminal": "T-B",
+    "posted": 7,
+    "kind": "出票",
+    "amount": 6,
+    "effective_window": 4,
+    "ref": null
+  }
+]

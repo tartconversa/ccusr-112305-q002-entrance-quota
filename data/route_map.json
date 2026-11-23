@@ -1,0 +1,38 @@
+[
+  {
+    "route": "E1",
+    "from_zone": "O",
+    "to_zone": "A",
+    "slot_capacity": 22
+  },
+  {
+    "route": "AB",
+    "from_zone": "A",
+    "to_zone": "B",
+    "slot_capacity": 16
+  },
+  {
+    "route": "BA",
+    "from_zone": "B",
+    "to_zone": "A",
+    "slot_capacity": 16
+  },
+  {
+    "route": "BC",
+    "from_zone": "B",
+    "to_zone": "C",
+    "slot_capacity": 20
+  },
+  {
+    "route": "CO",
+    "from_zone": "C",
+    "to_zone": "O",
+    "slot_capacity": 20
+  },
+  {
+    "route": "E2",
+    "from_zone": "O",
+    "to_zone": "C",
+    "slot_capacity": 18
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "seal": "C1",
+    "day": "2026-02-17",
+    "route": "AB",
+    "start": 3,
+    "end": 6,
+    "announced": 2,
+    "state": "关闭"
+  },
+  {
+    "seal": "C2",
+    "day": "2026-02-17",
+    "route": "BA",
+    "start": 3,
+    "end": 6,
+    "announced": 2,
+    "state": "开放"
+  },
+  {
+    "seal": "C3",
+    "day": "2026-02-17",
+    "route": "AB",
+    "start": 6,
+    "end": 8,
+    "announced": 6,
+    "state": "恢复"
+  }
+]
