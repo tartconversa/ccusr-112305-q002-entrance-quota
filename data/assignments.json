@@ -1,0 +1,2882 @@
+[
+  {
+    "group": "G00-0",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-1",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-2",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-3",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-4",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-5",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-6",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G00-7",
+    "block": "K00",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S00"
+  },
+  {
+    "group": "G01-0",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-1",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-2",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-3",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-4",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-5",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-6",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G01-7",
+    "block": "K01",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S01"
+  },
+  {
+    "group": "G02-0",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-1",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-2",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-3",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-4",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-5",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-6",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G02-7",
+    "block": "K02",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S02"
+  },
+  {
+    "group": "G03-0",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-1",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-2",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-3",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-4",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-5",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-6",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G03-7",
+    "block": "K03",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-10",
+    "original_class": "S03"
+  },
+  {
+    "group": "G04-0",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-1",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-2",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-3",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-4",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-5",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-6",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G04-7",
+    "block": "K04",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S04"
+  },
+  {
+    "group": "G05-0",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-1",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-2",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-3",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-4",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-5",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-6",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G05-7",
+    "block": "K05",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S05"
+  },
+  {
+    "group": "G06-0",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-1",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-2",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-3",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-4",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-5",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-6",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G06-7",
+    "block": "K06",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S06"
+  },
+  {
+    "group": "G07-0",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-1",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-2",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-3",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-4",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-5",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-6",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G07-7",
+    "block": "K07",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-17",
+    "original_class": "S07"
+  },
+  {
+    "group": "G08-0",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-1",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-2",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-3",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-4",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-5",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-6",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G08-7",
+    "block": "K08",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S08"
+  },
+  {
+    "group": "G09-0",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-1",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-2",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-3",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-4",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-5",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-6",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G09-7",
+    "block": "K09",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S09"
+  },
+  {
+    "group": "G10-0",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-1",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-2",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-3",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-4",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-5",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-6",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G10-7",
+    "block": "K10",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S10"
+  },
+  {
+    "group": "G11-0",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-1",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-2",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-3",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-4",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-5",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-6",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G11-7",
+    "block": "K11",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-24",
+    "original_class": "S11"
+  },
+  {
+    "group": "G12-0",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-1",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-2",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-3",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-4",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-5",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-6",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G12-7",
+    "block": "K12",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S12"
+  },
+  {
+    "group": "G13-0",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-1",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-2",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-3",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-4",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-5",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-6",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G13-7",
+    "block": "K13",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S13"
+  },
+  {
+    "group": "G14-0",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-1",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-2",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-3",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-4",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-5",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-6",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G14-7",
+    "block": "K14",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S14"
+  },
+  {
+    "group": "G15-0",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-1",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-2",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-3",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-4",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-5",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-6",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G15-7",
+    "block": "K15",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-01-31",
+    "original_class": "S15"
+  },
+  {
+    "group": "G16-0",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-1",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-2",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-3",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-4",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-5",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-6",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G16-7",
+    "block": "K16",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S16"
+  },
+  {
+    "group": "G17-0",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-1",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-2",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-3",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-4",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-5",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-6",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G17-7",
+    "block": "K17",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S17"
+  },
+  {
+    "group": "G18-0",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-1",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-2",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-3",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-4",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-5",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-6",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G18-7",
+    "block": "K18",
+    "stratum": "北线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S18"
+  },
+  {
+    "group": "G19-0",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-1",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-2",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-3",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-4",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-5",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-6",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G19-7",
+    "block": "K19",
+    "stratum": "南线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-07",
+    "original_class": "S19"
+  },
+  {
+    "group": "G20-0",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-1",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-2",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-3",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-4",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-5",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-6",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G20-7",
+    "block": "K20",
+    "stratum": "直达-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S20"
+  },
+  {
+    "group": "G21-0",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-1",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-2",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-3",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-4",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-5",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-6",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G21-7",
+    "block": "K21",
+    "stratum": "北线-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S21"
+  },
+  {
+    "group": "G22-0",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-1",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-2",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-3",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-4",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-5",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-6",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G22-7",
+    "block": "K22",
+    "stratum": "南线-上午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S22"
+  },
+  {
+    "group": "G23-0",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-1",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-2",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-3",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-4",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-5",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-6",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G23-7",
+    "block": "K23",
+    "stratum": "直达-下午",
+    "level": 0,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-14",
+    "original_class": "S23"
+  },
+  {
+    "group": "G24-0",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-1",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-2",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-3",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-4",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-5",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-6",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G24-7",
+    "block": "K24",
+    "stratum": "北线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S24"
+  },
+  {
+    "group": "G25-0",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-1",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-2",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-3",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-4",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-5",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-6",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G25-7",
+    "block": "K25",
+    "stratum": "南线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S25"
+  },
+  {
+    "group": "G26-0",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-1",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-2",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-3",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-4",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-5",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-6",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G26-7",
+    "block": "K26",
+    "stratum": "直达-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S26"
+  },
+  {
+    "group": "G27-0",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-1",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-2",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-3",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-4",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-5",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-6",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G27-7",
+    "block": "K27",
+    "stratum": "北线-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-21",
+    "original_class": "S27"
+  },
+  {
+    "group": "G28-0",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-1",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-2",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-3",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-4",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-5",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-6",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G28-7",
+    "block": "K28",
+    "stratum": "南线-上午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S28"
+  },
+  {
+    "group": "G29-0",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-1",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-2",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-3",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-4",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-5",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-6",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G29-7",
+    "block": "K29",
+    "stratum": "直达-下午",
+    "level": 1,
+    "invited": false,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S29"
+  },
+  {
+    "group": "G30-0",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-1",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-2",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-3",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-4",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-5",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-6",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G30-7",
+    "block": "K30",
+    "stratum": "北线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S30"
+  },
+  {
+    "group": "G31-0",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-1",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-2",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-3",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-4",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-5",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-6",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G31-7",
+    "block": "K31",
+    "stratum": "南线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-02-28",
+    "original_class": "S31"
+  },
+  {
+    "group": "G32-0",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-1",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-2",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-3",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-4",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-5",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-6",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G32-7",
+    "block": "K32",
+    "stratum": "直达-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S32"
+  },
+  {
+    "group": "G33-0",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-1",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-2",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-3",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-4",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-5",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-6",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G33-7",
+    "block": "K33",
+    "stratum": "北线-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S33"
+  },
+  {
+    "group": "G34-0",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-1",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-2",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-3",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-4",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-5",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-6",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G34-7",
+    "block": "K34",
+    "stratum": "南线-上午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S34"
+  },
+  {
+    "group": "G35-0",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-1",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-2",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-3",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-4",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": false,
+    "group_size": 5,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-5",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 2,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-6",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 3,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  },
+  {
+    "group": "G35-7",
+    "block": "K35",
+    "stratum": "直达-下午",
+    "level": 2,
+    "invited": true,
+    "group_size": 4,
+    "assigned_day": "2026-03-07",
+    "original_class": "S35"
+  }
+]

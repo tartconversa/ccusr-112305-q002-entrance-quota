@@ -1,0 +1,2018 @@
+[
+  {
+    "group": "G00-0",
+    "actual_class": "S01",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-1",
+    "actual_class": "S01",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-2",
+    "actual_class": "S00",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-3",
+    "actual_class": "S00",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-4",
+    "actual_class": "S00",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-5",
+    "actual_class": "S00",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-6",
+    "actual_class": "S00",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G00-7",
+    "actual_class": "S00",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G01-0",
+    "actual_class": "S01",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-1",
+    "actual_class": "S01",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-2",
+    "actual_class": "S01",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-3",
+    "actual_class": "S01",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-4",
+    "actual_class": "S01",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-5",
+    "actual_class": "S01",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-6",
+    "actual_class": "S01",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G01-7",
+    "actual_class": "S01",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G02-0",
+    "actual_class": "S02",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-1",
+    "actual_class": "S02",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-2",
+    "actual_class": "S02",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-3",
+    "actual_class": "S02",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-4",
+    "actual_class": "S02",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-5",
+    "actual_class": "S02",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-6",
+    "actual_class": "S02",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G02-7",
+    "actual_class": "S02",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G03-0",
+    "actual_class": "S03",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-1",
+    "actual_class": "S03",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-2",
+    "actual_class": "S03",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-3",
+    "actual_class": "S03",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-4",
+    "actual_class": "S03",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-5",
+    "actual_class": "S03",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-6",
+    "actual_class": "S03",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-17"
+  },
+  {
+    "group": "G03-7",
+    "actual_class": "S03",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-0",
+    "actual_class": "S04",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-1",
+    "actual_class": "S04",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-2",
+    "actual_class": "S04",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-3",
+    "actual_class": "S04",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-4",
+    "actual_class": "S04",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-5",
+    "actual_class": "S04",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-6",
+    "actual_class": "S04",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G04-7",
+    "actual_class": "S04",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G05-0",
+    "actual_class": "S05",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-1",
+    "actual_class": "S05",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-2",
+    "actual_class": "S05",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-3",
+    "actual_class": "S05",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-4",
+    "actual_class": "S05",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-5",
+    "actual_class": "S05",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-6",
+    "actual_class": "S05",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G05-7",
+    "actual_class": "S05",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G06-0",
+    "actual_class": "S06",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-1",
+    "actual_class": "S06",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-2",
+    "actual_class": "S06",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-3",
+    "actual_class": "S06",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-4",
+    "actual_class": "S06",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-5",
+    "actual_class": "S06",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-6",
+    "actual_class": "S06",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G06-7",
+    "actual_class": "S06",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G07-0",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-1",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-2",
+    "actual_class": "S07",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-3",
+    "actual_class": "S07",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-4",
+    "actual_class": "S07",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-5",
+    "actual_class": "S07",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-6",
+    "actual_class": "S07",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-24"
+  },
+  {
+    "group": "G07-7",
+    "actual_class": "S07",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-0",
+    "actual_class": "S08",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-1",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-2",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-3",
+    "actual_class": "S08",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-4",
+    "actual_class": "S08",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-5",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-6",
+    "actual_class": "S08",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G08-7",
+    "actual_class": "S08",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G09-0",
+    "actual_class": "S09",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-1",
+    "actual_class": "S09",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-2",
+    "actual_class": "S09",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-3",
+    "actual_class": "S09",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-4",
+    "actual_class": "S09",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-5",
+    "actual_class": "S09",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-6",
+    "actual_class": "S09",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G09-7",
+    "actual_class": "S09",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G10-0",
+    "actual_class": "S10",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-1",
+    "actual_class": "S10",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-2",
+    "actual_class": "S10",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-3",
+    "actual_class": "S10",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-4",
+    "actual_class": "S10",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-5",
+    "actual_class": "S10",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-6",
+    "actual_class": "S10",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G10-7",
+    "actual_class": "S10",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G11-0",
+    "actual_class": "S11",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-1",
+    "actual_class": "S11",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-2",
+    "actual_class": "S11",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-3",
+    "actual_class": "S11",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-4",
+    "actual_class": "S11",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-5",
+    "actual_class": "S11",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-6",
+    "actual_class": "S11",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-01-31"
+  },
+  {
+    "group": "G11-7",
+    "actual_class": "S11",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-0",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-1",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-2",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-3",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-4",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-5",
+    "actual_class": "S12",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-6",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G12-7",
+    "actual_class": "S12",
+    "endpoint": "关班",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G13-0",
+    "actual_class": "S13",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-1",
+    "actual_class": "S13",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-2",
+    "actual_class": "S13",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-3",
+    "actual_class": "S13",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-4",
+    "actual_class": "S13",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-5",
+    "actual_class": "S13",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-6",
+    "actual_class": "S13",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G13-7",
+    "actual_class": "S13",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G14-0",
+    "actual_class": "S15",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-1",
+    "actual_class": "S15",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-2",
+    "actual_class": "S14",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-3",
+    "actual_class": "S14",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-4",
+    "actual_class": "S14",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-5",
+    "actual_class": "S14",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-6",
+    "actual_class": "S14",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G14-7",
+    "actual_class": "S14",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G15-0",
+    "actual_class": "S15",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-1",
+    "actual_class": "S15",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-2",
+    "actual_class": "S15",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-3",
+    "actual_class": "S15",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-4",
+    "actual_class": "S15",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-5",
+    "actual_class": "S15",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-6",
+    "actual_class": "S15",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-07"
+  },
+  {
+    "group": "G15-7",
+    "actual_class": "S15",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-0",
+    "actual_class": "S16",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-1",
+    "actual_class": "S16",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-2",
+    "actual_class": "S16",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-3",
+    "actual_class": "S16",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-4",
+    "actual_class": "S16",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-5",
+    "actual_class": "S16",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-6",
+    "actual_class": "S16",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G16-7",
+    "actual_class": "S16",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G17-0",
+    "actual_class": "S17",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-1",
+    "actual_class": "S17",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-2",
+    "actual_class": "S17",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-3",
+    "actual_class": "S17",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-4",
+    "actual_class": "S17",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-5",
+    "actual_class": "S17",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-6",
+    "actual_class": "S17",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G17-7",
+    "actual_class": "S17",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G18-0",
+    "actual_class": "S18",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-1",
+    "actual_class": "S18",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-2",
+    "actual_class": "S18",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-3",
+    "actual_class": "S18",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-4",
+    "actual_class": "S18",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-5",
+    "actual_class": "S18",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-6",
+    "actual_class": "S18",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G18-7",
+    "actual_class": "S18",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G19-0",
+    "actual_class": "S19",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-1",
+    "actual_class": "S19",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-2",
+    "actual_class": "S19",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-3",
+    "actual_class": "S19",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-4",
+    "actual_class": "S19",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-5",
+    "actual_class": "S19",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-6",
+    "actual_class": "S19",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-14"
+  },
+  {
+    "group": "G19-7",
+    "actual_class": "S19",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-0",
+    "actual_class": "S20",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-1",
+    "actual_class": "S20",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-2",
+    "actual_class": "S20",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-3",
+    "actual_class": "S20",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-4",
+    "actual_class": "S20",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-5",
+    "actual_class": "S20",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-6",
+    "actual_class": "S20",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G20-7",
+    "actual_class": "S20",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G21-0",
+    "actual_class": "S22",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-1",
+    "actual_class": "S22",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-2",
+    "actual_class": "S21",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-3",
+    "actual_class": "S21",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-4",
+    "actual_class": "S21",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-5",
+    "actual_class": "S21",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-6",
+    "actual_class": "S21",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G21-7",
+    "actual_class": "S21",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G22-0",
+    "actual_class": "S22",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-1",
+    "actual_class": "S22",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-2",
+    "actual_class": "S22",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-3",
+    "actual_class": "S22",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-4",
+    "actual_class": "S22",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-5",
+    "actual_class": "S22",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-6",
+    "actual_class": "S22",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G22-7",
+    "actual_class": "S22",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G23-0",
+    "actual_class": "S23",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-1",
+    "actual_class": "S23",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-2",
+    "actual_class": "S23",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-3",
+    "actual_class": "S23",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-4",
+    "actual_class": "S23",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-5",
+    "actual_class": "S23",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-6",
+    "actual_class": "S23",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-21"
+  },
+  {
+    "group": "G23-7",
+    "actual_class": "S23",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-0",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-1",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-2",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-3",
+    "actual_class": "S24",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-4",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-5",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-6",
+    "actual_class": "S24",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G24-7",
+    "actual_class": "S24",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G25-0",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-1",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-2",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-3",
+    "actual_class": "S25",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-4",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-5",
+    "actual_class": "S25",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-6",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G25-7",
+    "actual_class": "S25",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G26-0",
+    "actual_class": "S26",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-1",
+    "actual_class": "S26",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-2",
+    "actual_class": "S26",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-3",
+    "actual_class": "S26",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-4",
+    "actual_class": "S26",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-5",
+    "actual_class": "S26",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-6",
+    "actual_class": "S26",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G26-7",
+    "actual_class": "S26",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G27-0",
+    "actual_class": "S27",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-1",
+    "actual_class": "S27",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-2",
+    "actual_class": "S27",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-3",
+    "actual_class": "S27",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-4",
+    "actual_class": "S27",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-5",
+    "actual_class": "S27",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-6",
+    "actual_class": "S27",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-02-28"
+  },
+  {
+    "group": "G27-7",
+    "actual_class": "S27",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-0",
+    "actual_class": "S29",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-1",
+    "actual_class": "S29",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-2",
+    "actual_class": "S28",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-3",
+    "actual_class": "S28",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-4",
+    "actual_class": "S28",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-5",
+    "actual_class": "S28",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-6",
+    "actual_class": "S28",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G28-7",
+    "actual_class": "S28",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G29-0",
+    "actual_class": "S29",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-1",
+    "actual_class": "S29",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-2",
+    "actual_class": "S29",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-3",
+    "actual_class": "S29",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-4",
+    "actual_class": "S29",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-5",
+    "actual_class": "S29",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-6",
+    "actual_class": "S29",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G29-7",
+    "actual_class": "S29",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G30-0",
+    "actual_class": "S30",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-1",
+    "actual_class": "S30",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-2",
+    "actual_class": "S30",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-3",
+    "actual_class": "S30",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-4",
+    "actual_class": "S30",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-5",
+    "actual_class": "S30",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-6",
+    "actual_class": "S30",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G30-7",
+    "actual_class": "S30",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G31-0",
+    "actual_class": "S31",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-1",
+    "actual_class": "S31",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-2",
+    "actual_class": "S31",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-3",
+    "actual_class": "S31",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-4",
+    "actual_class": "S31",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-5",
+    "actual_class": "S31",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-6",
+    "actual_class": "S31",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-07"
+  },
+  {
+    "group": "G31-7",
+    "actual_class": "S31",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-0",
+    "actual_class": "S32",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-1",
+    "actual_class": "S32",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-2",
+    "actual_class": "S32",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-3",
+    "actual_class": "S32",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-4",
+    "actual_class": "S32",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-5",
+    "actual_class": "S32",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-6",
+    "actual_class": "S32",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G32-7",
+    "actual_class": "S32",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-21"
+  },
+  {
+    "group": "G33-0",
+    "actual_class": "S33",
+    "endpoint": "满员",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-1",
+    "actual_class": "S33",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-2",
+    "actual_class": "S33",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-3",
+    "actual_class": "S33",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-4",
+    "actual_class": "S33",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-5",
+    "actual_class": "S33",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-6",
+    "actual_class": "S33",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G33-7",
+    "actual_class": "S33",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-21"
+  },
+  {
+    "group": "G34-0",
+    "actual_class": "S34",
+    "endpoint": "未回收",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-1",
+    "actual_class": "S34",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-2",
+    "actual_class": "S34",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-3",
+    "actual_class": "S34",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-4",
+    "actual_class": "S34",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-5",
+    "actual_class": "S34",
+    "endpoint": "到课",
+    "observed_attending": 4,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-6",
+    "actual_class": "S34",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G34-7",
+    "actual_class": "S34",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-21"
+  },
+  {
+    "group": "G35-0",
+    "actual_class": "S36",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-1",
+    "actual_class": "S36",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-2",
+    "actual_class": "S35",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-3",
+    "actual_class": "S35",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-4",
+    "actual_class": "S35",
+    "endpoint": "到课",
+    "observed_attending": 3,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-5",
+    "actual_class": "S35",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-6",
+    "actual_class": "S35",
+    "endpoint": "未到",
+    "observed_attending": null,
+    "known_day": "2026-03-14"
+  },
+  {
+    "group": "G35-7",
+    "actual_class": "S35",
+    "endpoint": "到课",
+    "observed_attending": 2,
+    "known_day": "2026-03-21"
+  }
+]
