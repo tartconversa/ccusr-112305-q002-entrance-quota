@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ski-ops-desk"
+version = "1.0.0"
+description = "雪场出入口营运台：分区人数/口间流量区间推断、容量放号、团体引导与终端版本承诺核算（纯标准库）"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+opsdesk = "opsdesk.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["opsdesk*"]

@@ -1,0 +1,6158 @@
+{
+  "day": "2026-02-17",
+  "data_dir": "/workspace/data",
+  "accounting_rules": [
+    {
+      "事项": "边界外进出 O",
+      "入账": "E1(O→A)、E2(O→C) 是外部进入，记首入区流入；CO(C→O) 是外部离开，记 C 流出。O 不设容量、不进 A/B/C 平衡；任何边界残差留在 O 侧。"
+    },
+    {
+      "事项": "同一人折返",
+      "入账": "闸机按穿越次数计数、不识别身份。如 A→B(AB) 后再 B→A(BA)，两条方向分别入账（-A/+B 与 -B/+A），不得轧差成 0；全天净额可能抵消，窗内人数不会。"
+    },
+    {
+      "事项": "跨区移动",
+      "入账": "A→B→C 这类链在 AB、BC 各计一次：AB 同时是 A 流出与 B 流入，BC 同时是 B 流出与 C 流入。两侧引用同一连接序列，故相连两区必然对得上。"
+    },
+    {
+      "事项": "封闭口前排队未穿越",
+      "入账": "没有穿越脉冲就不移动分区：排队者仍计在原区（出发区）。承诺/容量预留口径另行登记为“未来流入”，但不提前计入到达区人数。"
+    },
+    {
+      "事项": "已扫码未走完通道",
+      "入账": "已签到在途团按 data/README 在出发区统计，不视为已离场；同时作为刚性未来流入预留到达区容量。"
+    },
+    {
+      "事项": "缺脉冲",
+      "入账": "缺 observe_time 时只得到相邻累计点之间的跨窗总量，按区间/等式传播，绝不把缺脉冲窗口设为 0。"
+    },
+    {
+      "事项": "恢复后补传",
+      "入账": "同一 sensor/epoch/observe_time 以最后 known_at 读数为准；累计差额追溯到 observe_time 对应窗口，不在 known_at 接收当窗制造人数跳变。"
+    }
+  ],
+  "limits": {
+    "A": {
+      "zone": "A",
+      "hard": 48,
+      "reserved": 7
+    },
+    "B": {
+      "zone": "B",
+      "hard": 42,
+      "reserved": 5
+    },
+    "C": {
+      "zone": "C",
+      "hard": 55,
+      "reserved": 6
+    }
+  },
+  "network": {
+    "E1": {
+      "route": "E1",
+      "src": "O",
+      "dst": "A",
+      "capacity": 22
+    },
+    "AB": {
+      "route": "AB",
+      "src": "A",
+      "dst": "B",
+      "capacity": 16
+    },
+    "BA": {
+      "route": "BA",
+      "src": "B",
+      "dst": "A",
+      "capacity": 16
+    },
+    "BC": {
+      "route": "BC",
+      "src": "B",
+      "dst": "C",
+      "capacity": 20
+    },
+    "CO": {
+      "route": "CO",
+      "src": "C",
+      "dst": "O",
+      "capacity": 20
+    },
+    "E2": {
+      "route": "E2",
+      "src": "O",
+      "dst": "C",
+      "capacity": 18
+    }
+  },
+  "route_states": [
+    {
+      "route": "E1",
+      "closed_windows": [],
+      "seals": []
+    },
+    {
+      "route": "AB",
+      "closed_windows": [
+        3,
+        4,
+        5
+      ],
+      "seals": [
+        {
+          "seal": "C1",
+          "day": "2026-02-17",
+          "route": "AB",
+          "start": 3,
+          "end": 6,
+          "announced": 2,
+          "state": "关闭"
+        },
+        {
+          "seal": "C3",
+          "day": "2026-02-17",
+          "route": "AB",
+          "start": 6,
+          "end": 8,
+          "announced": 6,
+          "state": "恢复"
+        }
+      ]
+    },
+    {
+      "route": "BA",
+      "closed_windows": [],
+      "seals": [
+        {
+          "seal": "C2",
+          "day": "2026-02-17",
+          "route": "BA",
+          "start": 3,
+          "end": 6,
+          "announced": 2,
+          "state": "开放"
+        }
+      ]
+    },
+    {
+      "route": "BC",
+      "closed_windows": [],
+      "seals": []
+    },
+    {
+      "route": "CO",
+      "closed_windows": [],
+      "seals": []
+    },
+    {
+      "route": "E2",
+      "closed_windows": [],
+      "seals": []
+    }
+  ],
+  "closure_impact": {
+    "closures": [
+      {
+        "seal": "C1",
+        "route": "AB",
+        "closed_windows": [
+          "W3",
+          "W4",
+          "W5"
+        ],
+        "flows_during_closure": {
+          "W3": 0,
+          "W4": 0,
+          "W5": 0
+        },
+        "interpretation": "封闭方向闸机增量归零，是通道状态所致，不能解读为需求消失"
+      }
+    ],
+    "alternative_route": {
+      "E2_entries_W1_W8": {
+        "W1": 6,
+        "W2": 4,
+        "W3": 5,
+        "W4": 6,
+        "W5": 4,
+        "W6": 5,
+        "W7": 6,
+        "W8": 4
+      },
+      "E2_during_AB_closure_W3_W5": [
+        5,
+        6,
+        4
+      ],
+      "note": "E2 各窗仍有 4-6 人稳定进入，绕行/替代雪道口客流没有随 AB 闸机一起消失；团体应优先改引 E2，而不是假设总需求下降"
+    },
+    "one_way": {
+      "forward": "AB",
+      "forward_closed": [
+        3,
+        4,
+        5
+      ],
+      "backward": "BA",
+      "backward_closed": [],
+      "one_way_toward_backward_windows": [
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  "occupancy_reconstructed": {
+    "A": [
+      {
+        "window": 0,
+        "clock": "W0(08:00-08:30)",
+        "low": 20,
+        "high": 20,
+        "central": 20,
+        "exact": true
+      },
+      {
+        "window": 1,
+        "clock": "W1(08:30-09:00)",
+        "low": 19,
+        "high": 21,
+        "central": 20,
+        "exact": false
+      },
+      {
+        "window": 2,
+        "clock": "W2(09:00-09:30)",
+        "low": 23,
+        "high": 25,
+        "central": 24,
+        "exact": false
+      },
+      {
+        "window": 3,
+        "clock": "W3(09:30-10:00)",
+        "low": 25,
+        "high": 27,
+        "central": 26,
+        "exact": false
+      },
+      {
+        "window": 4,
+        "clock": "W4(10:00-10:30)",
+        "low": 35,
+        "high": 37,
+        "central": 36,
+        "exact": false
+      },
+      {
+        "window": 5,
+        "clock": "W5(10:30-11:00)",
+        "low": 39,
+        "high": 41,
+        "central": 40,
+        "exact": false
+      },
+      {
+        "window": 6,
+        "clock": "W6(11:00-11:30)",
+        "low": 44,
+        "high": 46,
+        "central": 45,
+        "exact": false
+      },
+      {
+        "window": 7,
+        "clock": "W7(11:30-12:00)",
+        "low": 44,
+        "high": 46,
+        "central": 45,
+        "exact": false
+      },
+      {
+        "window": 8,
+        "clock": "W8(12:00-12:30)",
+        "low": 47,
+        "high": 49,
+        "central": 48,
+        "exact": false
+      }
+    ],
+    "B": [
+      {
+        "window": 0,
+        "clock": "W0(08:00-08:30)",
+        "low": 14,
+        "high": 14,
+        "central": 14,
+        "exact": true
+      },
+      {
+        "window": 1,
+        "clock": "W1(08:30-09:00)",
+        "low": 14,
+        "high": 15,
+        "central": 14,
+        "exact": false
+      },
+      {
+        "window": 2,
+        "clock": "W2(09:00-09:30)",
+        "low": 10,
+        "high": 11,
+        "central": 10,
+        "exact": false
+      },
+      {
+        "window": 3,
+        "clock": "W3(09:30-10:00)",
+        "low": 8,
+        "high": 9,
+        "central": 8,
+        "exact": false
+      },
+      {
+        "window": 4,
+        "clock": "W4(10:00-10:30)",
+        "low": 0,
+        "high": 1,
+        "central": 0,
+        "exact": false
+      },
+      {
+        "window": 5,
+        "clock": "W5(10:30-11:00)",
+        "low": 0,
+        "high": 1,
+        "central": 0,
+        "exact": false
+      },
+      {
+        "window": 6,
+        "clock": "W6(11:00-11:30)",
+        "low": 0,
+        "high": 1,
+        "central": 0,
+        "exact": false
+      },
+      {
+        "window": 7,
+        "clock": "W7(11:30-12:00)",
+        "low": 3,
+        "high": 4,
+        "central": 3,
+        "exact": false
+      },
+      {
+        "window": 8,
+        "clock": "W8(12:00-12:30)",
+        "low": 1,
+        "high": 2,
+        "central": 1,
+        "exact": false
+      }
+    ],
+    "C": [
+      {
+        "window": 0,
+        "clock": "W0(08:00-08:30)",
+        "low": 17,
+        "high": 17,
+        "central": 17,
+        "exact": true
+      },
+      {
+        "window": 1,
+        "clock": "W1(08:30-09:00)",
+        "low": 16,
+        "high": 18,
+        "central": 17,
+        "exact": false
+      },
+      {
+        "window": 2,
+        "clock": "W2(09:00-09:30)",
+        "low": 19,
+        "high": 21,
+        "central": 20,
+        "exact": false
+      },
+      {
+        "window": 3,
+        "clock": "W3(09:30-10:00)",
+        "low": 10,
+        "high": 31,
+        "central": 20,
+        "exact": false
+      },
+      {
+        "window": 4,
+        "clock": "W4(10:00-10:30)",
+        "low": 20,
+        "high": 22,
+        "central": 21,
+        "exact": false
+      },
+      {
+        "window": 5,
+        "clock": "W5(10:30-11:00)",
+        "low": 19,
+        "high": 21,
+        "central": 20,
+        "exact": false
+      },
+      {
+        "window": 6,
+        "clock": "W6(11:00-11:30)",
+        "low": 15,
+        "high": 17,
+        "central": 16,
+        "exact": false
+      },
+      {
+        "window": 7,
+        "clock": "W7(11:30-12:00)",
+        "low": 14,
+        "high": 16,
+        "central": 15,
+        "exact": false
+      },
+      {
+        "window": 8,
+        "clock": "W8(12:00-12:30)",
+        "low": 16,
+        "high": 18,
+        "central": 17,
+        "exact": false
+      }
+    ]
+  },
+  "flows_reconstructed": {
+    "E1": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 17,
+        "central": 8,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 3,
+        "low": 7,
+        "high": 7,
+        "central": 7,
+        "exact": true
+      },
+      {
+        "window": 4,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 7,
+        "high": 7,
+        "central": 7,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      }
+    ],
+    "AB": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 16,
+        "central": 8,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 3,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 4,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 7,
+        "high": 7,
+        "central": 7,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      }
+    ],
+    "BA": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 16,
+        "central": 8,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 2,
+        "high": 2,
+        "central": 2,
+        "exact": true
+      },
+      {
+        "window": 3,
+        "low": 3,
+        "high": 3,
+        "central": 3,
+        "exact": true
+      },
+      {
+        "window": 4,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 3,
+        "high": 3,
+        "central": 3,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 1,
+        "high": 1,
+        "central": 1,
+        "exact": true
+      }
+    ],
+    "BC": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 16,
+        "central": 8,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 3,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 4,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 0,
+        "high": 0,
+        "central": 0,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 3,
+        "high": 3,
+        "central": 3,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 3,
+        "high": 3,
+        "central": 3,
+        "exact": true
+      }
+    ],
+    "CO": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 20,
+        "central": 10,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 8,
+        "high": 8,
+        "central": 8,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 0,
+        "high": 19,
+        "central": 9,
+        "exact": false
+      },
+      {
+        "window": 3,
+        "low": 0,
+        "high": 19,
+        "central": 9,
+        "exact": false
+      },
+      {
+        "window": 4,
+        "low": 7,
+        "high": 7,
+        "central": 7,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 8,
+        "high": 8,
+        "central": 8,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 9,
+        "high": 9,
+        "central": 9,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 10,
+        "high": 10,
+        "central": 10,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 7,
+        "high": 7,
+        "central": 7,
+        "exact": true
+      }
+    ],
+    "E2": [
+      {
+        "window": 0,
+        "low": 0,
+        "high": 18,
+        "central": 9,
+        "exact": false
+      },
+      {
+        "window": 1,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 2,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      },
+      {
+        "window": 3,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 4,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 5,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      },
+      {
+        "window": 6,
+        "low": 5,
+        "high": 5,
+        "central": 5,
+        "exact": true
+      },
+      {
+        "window": 7,
+        "low": 6,
+        "high": 6,
+        "central": 6,
+        "exact": true
+      },
+      {
+        "window": 8,
+        "low": 4,
+        "high": 4,
+        "central": 4,
+        "exact": true
+      }
+    ]
+  },
+  "cross_zone_match_sample": [
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 1,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        1
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        1
+      ],
+      "matched": true,
+      "flow": {
+        "low": 5,
+        "high": 5,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 2,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        2
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        2
+      ],
+      "matched": true,
+      "flow": {
+        "low": 6,
+        "high": 6,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 3,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        3
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        3
+      ],
+      "matched": true,
+      "flow": {
+        "low": 7,
+        "high": 7,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 4,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        4
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        4
+      ],
+      "matched": true,
+      "flow": {
+        "low": 4,
+        "high": 4,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 5,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        5
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        5
+      ],
+      "matched": true,
+      "flow": {
+        "low": 5,
+        "high": 5,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 6,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        6
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        6
+      ],
+      "matched": true,
+      "flow": {
+        "low": 6,
+        "high": 6,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 7,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        7
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        7
+      ],
+      "matched": true,
+      "flow": {
+        "low": 7,
+        "high": 7,
+        "exact": true
+      }
+    },
+    {
+      "route": "E1",
+      "from": "O",
+      "to": "A",
+      "window": 8,
+      "origin_out_variable": [
+        "F",
+        "E1",
+        8
+      ],
+      "destination_in_variable": [
+        "F",
+        "E1",
+        8
+      ],
+      "matched": true,
+      "flow": {
+        "low": 4,
+        "high": 4,
+        "exact": true
+      }
+    },
+    {
+      "route": "AB",
+      "from": "A",
+      "to": "B",
+      "window": 1,
+      "origin_out_variable": [
+        "F",
+        "AB",
+        1
+      ],
+      "destination_in_variable": [
+        "F",
+        "AB",
+        1
+      ],
+      "matched": true,
+      "flow": {
+        "low": 5,
+        "high": 5,
+        "exact": true
+      }
+    },
+    {
+      "route": "AB",
+      "from": "A",
+      "to": "B",
+      "window": 2,
+      "origin_out_variable": [
+        "F",
+        "AB",
+        2
+      ],
+      "destination_in_variable": [
+        "F",
+        "AB",
+        2
+      ],
+      "matched": true,
+      "flow": {
+        "low": 6,
+        "high": 6,
+        "exact": true
+      }
+    },
+    {
+      "route": "AB",
+      "from": "A",
+      "to": "B",
+      "window": 3,
+      "origin_out_variable": [
+        "F",
+        "AB",
+        3
+      ],
+      "destination_in_variable": [
+        "F",
+        "AB",
+        3
+      ],
+      "matched": true,
+      "flow": {
+        "low": 0,
+        "high": 0,
+        "exact": true
+      }
+    },
+    {
+      "route": "AB",
+      "from": "A",
+      "to": "B",
+      "window": 4,
+      "origin_out_variable": [
+        "F",
+        "AB",
+        4
+      ],
+      "destination_in_variable": [
+        "F",
+        "AB",
+        4
+      ],
+      "matched": true,
+      "flow": {
+        "low": 0,
+        "high": 0,
+        "exact": true
+      }
+    }
+  ],
+  "manual_reconciliation_all": [],
+  "diagnostics_full": {
+    "true_missing_pulses": {
+      "AB": [
+        2
+      ],
+      "CO": [
+        2
+      ]
+    },
+    "delayed_at_asof": {},
+    "backfills": [
+      {
+        "sensor": "AB",
+        "observe_time": 4,
+        "attributed_to_window": 4,
+        "old_cumulative": 1811,
+        "new_cumulative": 1811,
+        "known_at": 8,
+        "note": "补传累计值一致，滞留人数不变"
+      }
+    ],
+    "constraint_conflicts": [],
+    "propagation_iterations": 4
+  },
+  "decision_W4_pre_pulse_asof3": {
+    "day": "2026-02-17",
+    "asof": 3,
+    "stock": {
+      "A": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 20,
+          "high": 20,
+          "central": 20,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 19,
+          "high": 21,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 23,
+          "high": 25,
+          "central": 24,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 25,
+          "high": 27,
+          "central": 26,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 32,
+          "high": 50,
+          "central": 41,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 32,
+          "high": 75,
+          "central": 53,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 32,
+          "high": 97,
+          "central": 64,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 16,
+          "high": 135,
+          "central": 75,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 0,
+          "high": 173,
+          "central": 86,
+          "exact": false
+        }
+      ],
+      "B": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 14,
+          "high": 14,
+          "central": 14,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 11,
+          "high": 30,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 7,
+          "high": 26,
+          "central": 16,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 5,
+          "high": 24,
+          "central": 14,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 0,
+          "high": 19,
+          "central": 9,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 0,
+          "high": 19,
+          "central": 9,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 0,
+          "high": 19,
+          "central": 9,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 0,
+          "high": 35,
+          "central": 17,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 0,
+          "high": 51,
+          "central": 25,
+          "exact": false
+        }
+      ],
+      "C": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 17,
+          "high": 17,
+          "central": 17,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 16,
+          "high": 18,
+          "central": 17,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 19,
+          "high": 21,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 10,
+          "high": 31,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 20,
+          "high": 22,
+          "central": 21,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 0,
+          "high": 59,
+          "central": 29,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 0,
+          "high": 77,
+          "central": 38,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 0,
+          "high": 111,
+          "central": 55,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 0,
+          "high": 145,
+          "central": 72,
+          "exact": false
+        }
+      ]
+    },
+    "gate_comparison_W4": [
+      {
+        "gate": "E1",
+        "zone": "A",
+        "safe_operating": 0,
+        "central_operating": 0,
+        "safe_hard": 0,
+        "data_insufficient": true,
+        "start_stock": {
+          "low": 32,
+          "high": 50,
+          "exact": false
+        },
+        "state": "超过硬上限"
+      },
+      {
+        "gate": "E2",
+        "zone": "C",
+        "safe_operating": 8,
+        "central_operating": 18,
+        "safe_hard": 14,
+        "data_insufficient": false,
+        "start_stock": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "state": "正常"
+      }
+    ],
+    "entry_envelopes_W4_operating": {
+      "E1": {
+        "gate": "E1",
+        "window": 4,
+        "first_zone": "A",
+        "basis": "operating",
+        "capacity": 41,
+        "hard_capacity": 48,
+        "operating_capacity": 41,
+        "reserved": 7,
+        "start_stock_bounds": {
+          "low": 32,
+          "high": 50,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 66,
+        "other_inflow_high": 16,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 0,
+        "safe_total_gate_flow_central": 0,
+        "gate_slot_capacity": 22,
+        "observed_flow_bounds": {
+          "low": 0,
+          "high": 22,
+          "exact": false
+        },
+        "observed_flow": null,
+        "baseline_already_over_cap": true,
+        "data_insufficient_to_release": true,
+        "deficit_to_cap": 25,
+        "components": [
+          {
+            "route": "BA",
+            "role": "inflow",
+            "high": 16,
+            "central": 8
+          },
+          {
+            "route": "AB",
+            "role": "outflow",
+            "low": 0,
+            "central": 0
+          }
+        ],
+        "zone_state_at_start_hi": "超过硬上限",
+        "note": "当前信息下现状上界已超过容量，不能支持继续发票，先等缺测方向回执"
+      },
+      "E2": {
+        "gate": "E2",
+        "window": 4,
+        "first_zone": "C",
+        "basis": "operating",
+        "capacity": 49,
+        "hard_capacity": 55,
+        "operating_capacity": 49,
+        "reserved": 6,
+        "start_stock_bounds": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 41,
+        "other_inflow_high": 19,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 8,
+        "safe_total_gate_flow_central": 18,
+        "gate_slot_capacity": 18,
+        "observed_flow_bounds": {
+          "low": 0,
+          "high": 18,
+          "exact": false
+        },
+        "observed_flow": null,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BC",
+            "role": "inflow",
+            "high": 19,
+            "central": 9
+          },
+          {
+            "route": "CO",
+            "role": "outflow",
+            "low": 0,
+            "central": 10
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      }
+    },
+    "entry_envelopes_W4_hard": {
+      "E1": {
+        "gate": "E1",
+        "window": 4,
+        "first_zone": "A",
+        "basis": "hard",
+        "capacity": 48,
+        "hard_capacity": 48,
+        "operating_capacity": 41,
+        "reserved": 7,
+        "start_stock_bounds": {
+          "low": 32,
+          "high": 50,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 66,
+        "other_inflow_high": 16,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 0,
+        "safe_total_gate_flow_central": 0,
+        "gate_slot_capacity": 22,
+        "observed_flow_bounds": {
+          "low": 0,
+          "high": 22,
+          "exact": false
+        },
+        "observed_flow": null,
+        "baseline_already_over_cap": true,
+        "data_insufficient_to_release": true,
+        "deficit_to_cap": 18,
+        "components": [
+          {
+            "route": "BA",
+            "role": "inflow",
+            "high": 16,
+            "central": 8
+          },
+          {
+            "route": "AB",
+            "role": "outflow",
+            "low": 0,
+            "central": 0
+          }
+        ],
+        "zone_state_at_start_hi": "超过硬上限",
+        "note": "当前信息下现状上界已超过容量，不能支持继续发票，先等缺测方向回执"
+      },
+      "E2": {
+        "gate": "E2",
+        "window": 4,
+        "first_zone": "C",
+        "basis": "hard",
+        "capacity": 55,
+        "hard_capacity": 55,
+        "operating_capacity": 49,
+        "reserved": 6,
+        "start_stock_bounds": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 41,
+        "other_inflow_high": 19,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 14,
+        "safe_total_gate_flow_central": 18,
+        "gate_slot_capacity": 18,
+        "observed_flow_bounds": {
+          "low": 0,
+          "high": 18,
+          "exact": false
+        },
+        "observed_flow": null,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BC",
+            "role": "inflow",
+            "high": 19,
+            "central": 9
+          },
+          {
+            "route": "CO",
+            "role": "outflow",
+            "low": 0,
+            "central": 10
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      }
+    },
+    "limiting_A_W4": [
+      {
+        "route": "BA",
+        "signed": 1,
+        "variable": [
+          "P",
+          "BA",
+          3
+        ],
+        "width": 16,
+        "bounds": {
+          "low": 6,
+          "high": 22,
+          "exact": false
+        },
+        "share_of_width": 0.889,
+        "reasons": [
+          "读数延迟回传 observe=[3]（当前轮不可见）"
+        ]
+      },
+      {
+        "route": "(开场窗口0净流)",
+        "variable": [
+          "G",
+          "A"
+        ],
+        "width": 2,
+        "bounds": {
+          "low": -1,
+          "high": 1,
+          "exact": false
+        },
+        "share_of_width": 0.111,
+        "reasons": [
+          "窗口0无累计前值，由区内点验区间约束"
+        ]
+      }
+    ],
+    "limiting_C_W4": [
+      {
+        "route": "(开场窗口0净流)",
+        "variable": [
+          "G",
+          "C"
+        ],
+        "width": 2,
+        "bounds": {
+          "low": -1,
+          "high": 1,
+          "exact": false
+        },
+        "share_of_width": 1.0,
+        "reasons": [
+          "窗口0无累计前值，由区内点验区间约束"
+        ]
+      }
+    ],
+    "diagnostics": {
+      "true_missing_pulses": {
+        "AB": [
+          2
+        ],
+        "CO": [
+          2
+        ]
+      },
+      "delayed_at_asof": {
+        "BA": [
+          3
+        ]
+      },
+      "backfills": [],
+      "constraint_conflicts": [],
+      "propagation_iterations": 4
+    },
+    "manual_reconciliation": [],
+    "terminal_snapshot": {
+      "asof_posted": 3,
+      "versions": [
+        {
+          "tranche": "L1",
+          "version": 1,
+          "key": "L1/1",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E1",
+          "terminal": "T-A",
+          "quota": 14,
+          "replaces": null,
+          "is_current": false,
+          "receive_status": "已接收",
+          "received": 14,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 14,
+          "terminal_commitment_sold_plus_open": 14,
+          "unacked_exposure": 0,
+          "stop_next_batch": false
+        },
+        {
+          "tranche": "L1",
+          "version": 2,
+          "key": "L1/2",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E1",
+          "terminal": "T-A",
+          "quota": 5,
+          "replaces": "L1/1",
+          "is_current": true,
+          "receive_status": "无回执",
+          "received": 0,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 0,
+          "terminal_commitment_sold_plus_open": 0,
+          "unacked_exposure": 5,
+          "stop_next_batch": false
+        },
+        {
+          "tranche": "L2",
+          "version": 1,
+          "key": "L2/1",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E2",
+          "terminal": "T-B",
+          "quota": 10,
+          "replaces": null,
+          "is_current": true,
+          "receive_status": "已接收",
+          "received": 10,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 10,
+          "terminal_commitment_sold_plus_open": 10,
+          "unacked_exposure": 0,
+          "stop_next_batch": false
+        },
+        {
+          "tranche": "L3",
+          "version": 1,
+          "key": "L3/1",
+          "day": "2026-02-17",
+          "window": 5,
+          "gate": "E2",
+          "terminal": "T-C",
+          "quota": 13,
+          "replaces": null,
+          "is_current": true,
+          "receive_status": "无回执",
+          "received": 0,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 0,
+          "terminal_commitment_sold_plus_open": 0,
+          "unacked_exposure": 13,
+          "stop_next_batch": false
+        }
+      ],
+      "totals": {
+        "overall": {
+          "sold": 0,
+          "open_remainder": 24,
+          "terminal_commitment": 24,
+          "unacked_exposure": 18,
+          "total_commitment_conservative": 42
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 0,
+            "open_remainder": 14,
+            "terminal_commitment": 14,
+            "unacked_exposure": 5,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 10,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        }
+      },
+      "holds": [
+        {
+          "terminal": "T-A",
+          "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+          "reason": "L1/2 无任何接收回执",
+          "unacked_exposure": 5
+        },
+        {
+          "terminal": "T-C",
+          "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+          "reason": "L3/1 无任何接收回执",
+          "unacked_exposure": 13
+        }
+      ]
+    }
+  },
+  "decision_W4_asof4": {
+    "day": "2026-02-17",
+    "asof": 4,
+    "stock": {
+      "A": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 20,
+          "high": 20,
+          "central": 20,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 19,
+          "high": 21,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 23,
+          "high": 25,
+          "central": 24,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 25,
+          "high": 27,
+          "central": 26,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 35,
+          "high": 37,
+          "central": 36,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 39,
+          "high": 41,
+          "central": 40,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 39,
+          "high": 79,
+          "central": 59,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 23,
+          "high": 117,
+          "central": 70,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 7,
+          "high": 155,
+          "central": 81,
+          "exact": false
+        }
+      ],
+      "B": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 14,
+          "high": 14,
+          "central": 14,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 14,
+          "high": 30,
+          "central": 22,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 10,
+          "high": 26,
+          "central": 18,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 8,
+          "high": 24,
+          "central": 16,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 0,
+          "high": 16,
+          "central": 8,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 0,
+          "high": 16,
+          "central": 8,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 0,
+          "high": 16,
+          "central": 8,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 0,
+          "high": 32,
+          "central": 16,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 0,
+          "high": 48,
+          "central": 24,
+          "exact": false
+        }
+      ],
+      "C": [
+        {
+          "window": 0,
+          "clock": "W0(08:00-08:30)",
+          "low": 17,
+          "high": 17,
+          "central": 17,
+          "exact": true
+        },
+        {
+          "window": 1,
+          "clock": "W1(08:30-09:00)",
+          "low": 16,
+          "high": 18,
+          "central": 17,
+          "exact": false
+        },
+        {
+          "window": 2,
+          "clock": "W2(09:00-09:30)",
+          "low": 19,
+          "high": 21,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 3,
+          "clock": "W3(09:30-10:00)",
+          "low": 10,
+          "high": 31,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 4,
+          "clock": "W4(10:00-10:30)",
+          "low": 20,
+          "high": 22,
+          "central": 21,
+          "exact": false
+        },
+        {
+          "window": 5,
+          "clock": "W5(10:30-11:00)",
+          "low": 19,
+          "high": 21,
+          "central": 20,
+          "exact": false
+        },
+        {
+          "window": 6,
+          "clock": "W6(11:00-11:30)",
+          "low": 0,
+          "high": 55,
+          "central": 27,
+          "exact": false
+        },
+        {
+          "window": 7,
+          "clock": "W7(11:30-12:00)",
+          "low": 0,
+          "high": 89,
+          "central": 44,
+          "exact": false
+        },
+        {
+          "window": 8,
+          "clock": "W8(12:00-12:30)",
+          "low": 0,
+          "high": 123,
+          "central": 61,
+          "exact": false
+        }
+      ]
+    },
+    "gate_comparison_W4": [
+      {
+        "gate": "E1",
+        "zone": "A",
+        "safe_operating": 4,
+        "central_operating": 5,
+        "safe_hard": 11,
+        "data_insufficient": false,
+        "start_stock": {
+          "low": 35,
+          "high": 37,
+          "exact": false
+        },
+        "state": "正常"
+      },
+      {
+        "gate": "E2",
+        "zone": "C",
+        "safe_operating": 18,
+        "central_operating": 18,
+        "safe_hard": 18,
+        "data_insufficient": false,
+        "start_stock": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "state": "正常"
+      }
+    ],
+    "entry_envelopes_W4_operating": {
+      "E1": {
+        "gate": "E1",
+        "window": 4,
+        "first_zone": "A",
+        "basis": "operating",
+        "capacity": 41,
+        "hard_capacity": 48,
+        "operating_capacity": 41,
+        "reserved": 7,
+        "start_stock_bounds": {
+          "low": 35,
+          "high": 37,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 37,
+        "other_inflow_high": 0,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 4,
+        "safe_total_gate_flow_central": 5,
+        "gate_slot_capacity": 22,
+        "observed_flow_bounds": {
+          "low": 4,
+          "high": 4,
+          "exact": true
+        },
+        "observed_flow": 4,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BA",
+            "role": "inflow",
+            "high": 0,
+            "central": 0
+          },
+          {
+            "route": "AB",
+            "role": "outflow",
+            "low": 0,
+            "central": 0
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      },
+      "E2": {
+        "gate": "E2",
+        "window": 4,
+        "first_zone": "C",
+        "basis": "operating",
+        "capacity": 49,
+        "hard_capacity": 55,
+        "operating_capacity": 49,
+        "reserved": 6,
+        "start_stock_bounds": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 15,
+        "other_inflow_high": 0,
+        "outflow_low_credited": 7,
+        "safe_total_gate_flow_conservative": 18,
+        "safe_total_gate_flow_central": 18,
+        "gate_slot_capacity": 18,
+        "observed_flow_bounds": {
+          "low": 6,
+          "high": 6,
+          "exact": true
+        },
+        "observed_flow": 6,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BC",
+            "role": "inflow",
+            "high": 0,
+            "central": 0
+          },
+          {
+            "route": "CO",
+            "role": "outflow",
+            "low": 7,
+            "central": 7
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      }
+    },
+    "entry_envelopes_W4_hard": {
+      "E1": {
+        "gate": "E1",
+        "window": 4,
+        "first_zone": "A",
+        "basis": "hard",
+        "capacity": 48,
+        "hard_capacity": 48,
+        "operating_capacity": 41,
+        "reserved": 7,
+        "start_stock_bounds": {
+          "low": 35,
+          "high": 37,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 37,
+        "other_inflow_high": 0,
+        "outflow_low_credited": 0,
+        "safe_total_gate_flow_conservative": 11,
+        "safe_total_gate_flow_central": 12,
+        "gate_slot_capacity": 22,
+        "observed_flow_bounds": {
+          "low": 4,
+          "high": 4,
+          "exact": true
+        },
+        "observed_flow": 4,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BA",
+            "role": "inflow",
+            "high": 0,
+            "central": 0
+          },
+          {
+            "route": "AB",
+            "role": "outflow",
+            "low": 0,
+            "central": 0
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      },
+      "E2": {
+        "gate": "E2",
+        "window": 4,
+        "first_zone": "C",
+        "basis": "hard",
+        "capacity": 55,
+        "hard_capacity": 55,
+        "operating_capacity": 49,
+        "reserved": 6,
+        "start_stock_bounds": {
+          "low": 20,
+          "high": 22,
+          "exact": false
+        },
+        "next_stock_baseline_high_q0": 15,
+        "other_inflow_high": 0,
+        "outflow_low_credited": 7,
+        "safe_total_gate_flow_conservative": 18,
+        "safe_total_gate_flow_central": 18,
+        "gate_slot_capacity": 18,
+        "observed_flow_bounds": {
+          "low": 6,
+          "high": 6,
+          "exact": true
+        },
+        "observed_flow": 6,
+        "baseline_already_over_cap": false,
+        "data_insufficient_to_release": false,
+        "deficit_to_cap": 0,
+        "components": [
+          {
+            "route": "BC",
+            "role": "inflow",
+            "high": 0,
+            "central": 0
+          },
+          {
+            "route": "CO",
+            "role": "outflow",
+            "low": 7,
+            "central": 7
+          }
+        ],
+        "zone_state_at_start_hi": "正常",
+        "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+      }
+    },
+    "limiting_A_W4": [
+      {
+        "route": "(开场窗口0净流)",
+        "variable": [
+          "G",
+          "A"
+        ],
+        "width": 2,
+        "bounds": {
+          "low": -1,
+          "high": 1,
+          "exact": false
+        },
+        "share_of_width": 1.0,
+        "reasons": [
+          "窗口0无累计前值，由区内点验区间约束"
+        ]
+      }
+    ],
+    "limiting_C_W4": [
+      {
+        "route": "(开场窗口0净流)",
+        "variable": [
+          "G",
+          "C"
+        ],
+        "width": 2,
+        "bounds": {
+          "low": -1,
+          "high": 1,
+          "exact": false
+        },
+        "share_of_width": 1.0,
+        "reasons": [
+          "窗口0无累计前值，由区内点验区间约束"
+        ]
+      }
+    ],
+    "diagnostics": {
+      "true_missing_pulses": {
+        "AB": [
+          2
+        ],
+        "CO": [
+          2
+        ]
+      },
+      "delayed_at_asof": {},
+      "backfills": [],
+      "constraint_conflicts": [],
+      "propagation_iterations": 4
+    },
+    "manual_reconciliation": [],
+    "terminal_snapshot": {
+      "asof_posted": 4,
+      "versions": [
+        {
+          "tranche": "L1",
+          "version": 1,
+          "key": "L1/1",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E1",
+          "terminal": "T-A",
+          "quota": 14,
+          "replaces": null,
+          "is_current": false,
+          "receive_status": "已接收",
+          "received": 14,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 7,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 7,
+          "terminal_commitment_sold_plus_open": 14,
+          "unacked_exposure": 0,
+          "stop_next_batch": false
+        },
+        {
+          "tranche": "L1",
+          "version": 2,
+          "key": "L1/2",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E1",
+          "terminal": "T-A",
+          "quota": 5,
+          "replaces": "L1/1",
+          "is_current": true,
+          "receive_status": "接收失败",
+          "received": 0,
+          "receive_failed_events": 1,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 0,
+          "terminal_commitment_sold_plus_open": 0,
+          "unacked_exposure": 0,
+          "stop_next_batch": true
+        },
+        {
+          "tranche": "L2",
+          "version": 1,
+          "key": "L2/1",
+          "day": "2026-02-17",
+          "window": 4,
+          "gate": "E2",
+          "terminal": "T-B",
+          "quota": 10,
+          "replaces": null,
+          "is_current": true,
+          "receive_status": "已接收",
+          "received": 10,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 10,
+          "terminal_commitment_sold_plus_open": 10,
+          "unacked_exposure": 0,
+          "stop_next_batch": false
+        },
+        {
+          "tranche": "L3",
+          "version": 1,
+          "key": "L3/1",
+          "day": "2026-02-17",
+          "window": 5,
+          "gate": "E2",
+          "terminal": "T-C",
+          "quota": 13,
+          "replaces": null,
+          "is_current": true,
+          "receive_status": "无回执",
+          "received": 0,
+          "receive_failed_events": 0,
+          "sold_version_deducted": 0,
+          "cancelled": 0,
+          "returned_confirmed": 0,
+          "open_remainder": 0,
+          "terminal_commitment_sold_plus_open": 0,
+          "unacked_exposure": 13,
+          "stop_next_batch": false
+        }
+      ],
+      "totals": {
+        "overall": {
+          "sold": 7,
+          "open_remainder": 17,
+          "terminal_commitment": 24,
+          "unacked_exposure": 13,
+          "total_commitment_conservative": 37
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 7,
+            "open_remainder": 7,
+            "terminal_commitment": 14,
+            "unacked_exposure": 0,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 10,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        }
+      },
+      "holds": [
+        {
+          "terminal": "T-A",
+          "action": "停发该终端下一批额度，直至接收链路确认恢复",
+          "reason": "L1/2 接收失败",
+          "unreconciled_remainder": 0
+        },
+        {
+          "terminal": "T-C",
+          "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+          "reason": "L3/1 无任何接收回执",
+          "unacked_exposure": 13
+        }
+      ]
+    }
+  },
+  "path_bottlenecks_W4": {
+    "E1": {
+      "gate": "E1",
+      "basis": "operating",
+      "zone_checks": [
+        {
+          "zone": "A",
+          "window": 5,
+          "stock_bounds": {
+            "low": 39,
+            "high": 41,
+            "exact": false
+          },
+          "capacity": 41,
+          "upper_breached": false,
+          "looks_saturated": true,
+          "state": "贴近运营上限"
+        },
+        {
+          "zone": "A",
+          "window": 6,
+          "stock_bounds": {
+            "low": 39,
+            "high": 79,
+            "exact": false
+          },
+          "capacity": 41,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        },
+        {
+          "zone": "A",
+          "window": 7,
+          "stock_bounds": {
+            "low": 23,
+            "high": 117,
+            "exact": false
+          },
+          "capacity": 41,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        },
+        {
+          "zone": "B",
+          "window": 5,
+          "stock_bounds": {
+            "low": 0,
+            "high": 16,
+            "exact": false
+          },
+          "capacity": 37,
+          "upper_breached": false,
+          "looks_saturated": false,
+          "state": "正常"
+        },
+        {
+          "zone": "B",
+          "window": 6,
+          "stock_bounds": {
+            "low": 0,
+            "high": 16,
+            "exact": false
+          },
+          "capacity": 37,
+          "upper_breached": false,
+          "looks_saturated": false,
+          "state": "正常"
+        },
+        {
+          "zone": "B",
+          "window": 7,
+          "stock_bounds": {
+            "low": 0,
+            "high": 32,
+            "exact": false
+          },
+          "capacity": 37,
+          "upper_breached": false,
+          "looks_saturated": false,
+          "state": "正常"
+        },
+        {
+          "zone": "C",
+          "window": 5,
+          "stock_bounds": {
+            "low": 19,
+            "high": 21,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": false,
+          "looks_saturated": false,
+          "state": "正常"
+        },
+        {
+          "zone": "C",
+          "window": 6,
+          "stock_bounds": {
+            "low": 0,
+            "high": 55,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        },
+        {
+          "zone": "C",
+          "window": 7,
+          "stock_bounds": {
+            "low": 0,
+            "high": 89,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        }
+      ],
+      "limiting_saturated_zone": {
+        "zone": "A",
+        "window": 5,
+        "stock_bounds": {
+          "low": 39,
+          "high": 41,
+          "exact": false
+        },
+        "capacity": 41,
+        "upper_breached": false,
+        "looks_saturated": true,
+        "state": "贴近运营上限"
+      },
+      "departure_share": {
+        "zone": "A",
+        "window": 4,
+        "guaranteed_departure_slots": 0,
+        "edges": [
+          {
+            "route": "AB",
+            "low": 0,
+            "capacity": 16,
+            "closed": true
+          }
+        ]
+      }
+    },
+    "E2": {
+      "gate": "E2",
+      "basis": "operating",
+      "zone_checks": [
+        {
+          "zone": "C",
+          "window": 5,
+          "stock_bounds": {
+            "low": 19,
+            "high": 21,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": false,
+          "looks_saturated": false,
+          "state": "正常"
+        },
+        {
+          "zone": "C",
+          "window": 6,
+          "stock_bounds": {
+            "low": 0,
+            "high": 55,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        },
+        {
+          "zone": "C",
+          "window": 7,
+          "stock_bounds": {
+            "low": 0,
+            "high": 89,
+            "exact": false
+          },
+          "capacity": 49,
+          "upper_breached": true,
+          "looks_saturated": false,
+          "state": "超过运营保留口径"
+        }
+      ],
+      "limiting_saturated_zone": null,
+      "departure_share": null
+    }
+  },
+  "response_options": {
+    "window": 4,
+    "by_gate": {
+      "E1": {
+        "must_serve_group_people_W4": 20,
+        "sold_tickets_version_deducted": 7,
+        "terminal_unrecovered_remainder": 3,
+        "total_claims_conservative": 30,
+        "safe_hard_slots": 11,
+        "safe_operating_slots": 4,
+        "hard_gap_claims_minus_slots": 19
+      },
+      "E2": {
+        "must_serve_group_people_W4": 0,
+        "sold_tickets_version_deducted": 6,
+        "terminal_unrecovered_remainder": 4,
+        "total_claims_conservative": 10,
+        "safe_hard_slots": 18,
+        "safe_operating_slots": 18,
+        "hard_gap_claims_minus_slots": -8
+      }
+    },
+    "total_conservative_claims": 40,
+    "total_hard_slots": 29,
+    "aggregate_gap": 11,
+    "protected_group_share": {
+      "W4_must_serve": 20,
+      "policy": "先保留在途 G1 与已出票 G2 的承诺份额，再决定散客终端额度"
+    },
+    "option_divert_entrance": {
+      "description": "把可改口的已出票团 G2 部分由 E1 改引 E2，集合时间 W4 不变",
+      "diverted_allocations": [
+        {
+          "ticket": "G2",
+          "gate": "E2",
+          "window": 4,
+          "people": 9,
+          "change": "改引 E2，集合时间 W4 不变"
+        }
+      ],
+      "effect": "启用 E2 空余硬容量 8，降低 E1 瓶颈；不改变 W4 总缺口，只做口间再平衡"
+    },
+    "option_hold_sales": {
+      "description": "停止 E1 新散客票、停发 T-A 下一批、催收回执与未回收额度，G3/G4 走协商改场次",
+      "recoverable_terminal_remainder": 7,
+      "central_quota_cut_L1_14_to_5": 9,
+      "negotiable_groups": [
+        {
+          "ticket": "G3",
+          "people": 15,
+          "window": 5,
+          "assigned_gate": "E2",
+          "stages": "已付待发",
+          "alternate_gates": [
+            "E1"
+          ],
+          "action_class": "已付款未出票，可停发/协商改场次",
+          "must_serve": false,
+          "may_divert_gate": true,
+          "may_shift_window": true,
+          "assembly_time_preserved": true
+        },
+        {
+          "ticket": "G4",
+          "people": 10,
+          "window": 6,
+          "assigned_gate": "E2",
+          "stages": "可协商",
+          "alternate_gates": [
+            "E1"
+          ],
+          "action_class": "可协商改场次，优先用于暂缓发售方案",
+          "must_serve": false,
+          "may_divert_gate": true,
+          "may_shift_window": true,
+          "assembly_time_preserved": true
+        }
+      ],
+      "effect": "中央口径已由 L1/1=14 压到 L1/2=5；旧版未回收 3 与 T-B 未回收 4 在确认回收前仍占总承诺"
+    },
+    "must_continue_serve": [
+      {
+        "ticket": "G1",
+        "people": 9,
+        "window": 4,
+        "assigned_gate": "E1",
+        "stages": "已签到在途",
+        "alternate_gates": [
+          "E2"
+        ],
+        "action_class": "已经在途，须继续接待",
+        "must_serve": true,
+        "may_divert_gate": false,
+        "may_shift_window": false,
+        "assembly_time_preserved": true
+      }
+    ]
+  },
+  "groups": {
+    "triage": [
+      {
+        "ticket": "G1",
+        "people": 9,
+        "window": 4,
+        "assigned_gate": "E1",
+        "stages": "已签到在途",
+        "alternate_gates": [
+          "E2"
+        ],
+        "action_class": "已经在途，须继续接待",
+        "must_serve": true,
+        "may_divert_gate": false,
+        "may_shift_window": false,
+        "assembly_time_preserved": true
+      },
+      {
+        "ticket": "G2",
+        "people": 11,
+        "window": 4,
+        "assigned_gate": "E1",
+        "stages": "已出票",
+        "alternate_gates": [
+          "E2"
+        ],
+        "action_class": "有效票，保留承诺份额，可改口但保留集合时间",
+        "must_serve": true,
+        "may_divert_gate": true,
+        "may_shift_window": false,
+        "assembly_time_preserved": true
+      },
+      {
+        "ticket": "G3",
+        "people": 15,
+        "window": 5,
+        "assigned_gate": "E2",
+        "stages": "已付待发",
+        "alternate_gates": [
+          "E1"
+        ],
+        "action_class": "已付款未出票，可停发/协商改场次",
+        "must_serve": false,
+        "may_divert_gate": true,
+        "may_shift_window": true,
+        "assembly_time_preserved": true
+      },
+      {
+        "ticket": "G4",
+        "people": 10,
+        "window": 6,
+        "assigned_gate": "E2",
+        "stages": "可协商",
+        "alternate_gates": [
+          "E1"
+        ],
+        "action_class": "可协商改场次，优先用于暂缓发售方案",
+        "must_serve": false,
+        "may_divert_gate": true,
+        "may_shift_window": true,
+        "assembly_time_preserved": true
+      }
+    ],
+    "plan": {
+      "capacities_used_hard": {
+        "E1/W4": 11,
+        "E2/W4": 18,
+        "E1/W5": 7,
+        "E2/W5": 18,
+        "E1/W6": 8,
+        "E2/W6": 18,
+        "E1/W7": 6,
+        "E2/W7": 18,
+        "E1/W8": 2,
+        "E2/W8": 18
+      },
+      "plans": [
+        {
+          "ticket": "G1",
+          "people": 9,
+          "stages": "已签到在途",
+          "assembly_window": 4,
+          "allocations": [
+            {
+              "gate": "E1",
+              "window": 4,
+              "people": 9,
+              "change": "原口"
+            }
+          ],
+          "unplaced": 0,
+          "recommendation": "可安置",
+          "shifted_to_window": null
+        },
+        {
+          "ticket": "G2",
+          "people": 11,
+          "stages": "已出票",
+          "assembly_window": 4,
+          "allocations": [
+            {
+              "gate": "E1",
+              "window": 4,
+              "people": 2,
+              "change": "原口"
+            },
+            {
+              "gate": "E2",
+              "window": 4,
+              "people": 9,
+              "change": "改引 E2，集合时间 W4 不变"
+            }
+          ],
+          "unplaced": 0,
+          "recommendation": "可安置",
+          "shifted_to_window": null
+        },
+        {
+          "ticket": "G3",
+          "people": 15,
+          "stages": "已付待发",
+          "assembly_window": 5,
+          "allocations": [
+            {
+              "gate": "E2",
+              "window": 5,
+              "people": 15,
+              "change": "原口"
+            }
+          ],
+          "unplaced": 0,
+          "recommendation": "可安置",
+          "shifted_to_window": null
+        },
+        {
+          "ticket": "G4",
+          "people": 10,
+          "stages": "可协商",
+          "assembly_window": 6,
+          "allocations": [
+            {
+              "gate": "E2",
+              "window": 6,
+              "people": 10,
+              "change": "原口"
+            }
+          ],
+          "unplaced": 0,
+          "recommendation": "可安置",
+          "shifted_to_window": null
+        }
+      ],
+      "claims_W4": {
+        "must_serve_groups": 20,
+        "all_groups": 20,
+        "terminal": {
+          "E1/W4": {
+            "sold": 7,
+            "open_remainder": 3,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 6,
+            "open_remainder": 4,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        }
+      },
+      "safe_W4": {
+        "E1": {
+          "operating": 4,
+          "hard": 11
+        },
+        "E2": {
+          "operating": 18,
+          "hard": 18
+        }
+      }
+    }
+  },
+  "terminals_latest": {
+    "asof_posted": null,
+    "versions": [
+      {
+        "tranche": "L1",
+        "version": 1,
+        "key": "L1/1",
+        "day": "2026-02-17",
+        "window": 4,
+        "gate": "E1",
+        "terminal": "T-A",
+        "quota": 14,
+        "replaces": null,
+        "is_current": false,
+        "receive_status": "已接收",
+        "received": 14,
+        "receive_failed_events": 0,
+        "sold_version_deducted": 7,
+        "cancelled": 0,
+        "returned_confirmed": 4,
+        "open_remainder": 3,
+        "terminal_commitment_sold_plus_open": 10,
+        "unacked_exposure": 0,
+        "stop_next_batch": false
+      },
+      {
+        "tranche": "L1",
+        "version": 2,
+        "key": "L1/2",
+        "day": "2026-02-17",
+        "window": 4,
+        "gate": "E1",
+        "terminal": "T-A",
+        "quota": 5,
+        "replaces": "L1/1",
+        "is_current": true,
+        "receive_status": "接收失败",
+        "received": 0,
+        "receive_failed_events": 1,
+        "sold_version_deducted": 0,
+        "cancelled": 0,
+        "returned_confirmed": 0,
+        "open_remainder": 0,
+        "terminal_commitment_sold_plus_open": 0,
+        "unacked_exposure": 0,
+        "stop_next_batch": true
+      },
+      {
+        "tranche": "L2",
+        "version": 1,
+        "key": "L2/1",
+        "day": "2026-02-17",
+        "window": 4,
+        "gate": "E2",
+        "terminal": "T-B",
+        "quota": 10,
+        "replaces": null,
+        "is_current": true,
+        "receive_status": "已接收",
+        "received": 10,
+        "receive_failed_events": 0,
+        "sold_version_deducted": 6,
+        "cancelled": 0,
+        "returned_confirmed": 0,
+        "open_remainder": 4,
+        "terminal_commitment_sold_plus_open": 10,
+        "unacked_exposure": 0,
+        "stop_next_batch": false
+      },
+      {
+        "tranche": "L3",
+        "version": 1,
+        "key": "L3/1",
+        "day": "2026-02-17",
+        "window": 5,
+        "gate": "E2",
+        "terminal": "T-C",
+        "quota": 13,
+        "replaces": null,
+        "is_current": true,
+        "receive_status": "无回执",
+        "received": 0,
+        "receive_failed_events": 0,
+        "sold_version_deducted": 0,
+        "cancelled": 0,
+        "returned_confirmed": 0,
+        "open_remainder": 0,
+        "terminal_commitment_sold_plus_open": 0,
+        "unacked_exposure": 13,
+        "stop_next_batch": false
+      }
+    ],
+    "totals": {
+      "overall": {
+        "sold": 13,
+        "open_remainder": 7,
+        "terminal_commitment": 20,
+        "unacked_exposure": 13,
+        "total_commitment_conservative": 33
+      },
+      "by_gate_window": {
+        "E1/W4": {
+          "sold": 7,
+          "open_remainder": 3,
+          "terminal_commitment": 10,
+          "unacked_exposure": 0,
+          "central_current_quota": 5,
+          "central_superseded_quota": 14
+        },
+        "E2/W4": {
+          "sold": 6,
+          "open_remainder": 4,
+          "terminal_commitment": 10,
+          "unacked_exposure": 0,
+          "central_current_quota": 10,
+          "central_superseded_quota": 0
+        },
+        "E2/W5": {
+          "sold": 0,
+          "open_remainder": 0,
+          "terminal_commitment": 0,
+          "unacked_exposure": 13,
+          "central_current_quota": 13,
+          "central_superseded_quota": 0
+        }
+      }
+    },
+    "holds": [
+      {
+        "terminal": "T-A",
+        "action": "停发该终端下一批额度，直至接收链路确认恢复",
+        "reason": "L1/2 接收失败",
+        "unreconciled_remainder": 0
+      },
+      {
+        "terminal": "T-C",
+        "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+        "reason": "L3/1 无任何接收回执",
+        "unacked_exposure": 13
+      }
+    ]
+  },
+  "stop_trace": {
+    "triggers": [
+      {
+        "count_id": "2026-02-17-A-5",
+        "zone": "A",
+        "count_range": [
+          39,
+          41
+        ],
+        "known_at": 6,
+        "inferred_N6": {
+          "low": 44,
+          "high": 46,
+          "exact": false
+        },
+        "operating_cap": 41,
+        "hard_cap": 48
+      }
+    ],
+    "stop_new_issue": [
+      {
+        "gate": "E1",
+        "from_window": 6,
+        "action": "立即停止 E1 后续半小时新票签发；L1 不再追加，T-A 下一批额度停发",
+        "why": "A@W6 保守上界 46 已越过运营上限 41，独立收尾 A=48 触硬上限"
+      }
+    ],
+    "valid_tickets": {
+      "sold_deducted_to_version": {
+        "L1/v1@T-A": 7,
+        "L2/v1@T-B": 6
+      },
+      "must_serve_groups": [
+        {
+          "ticket": "G1",
+          "people": 9,
+          "window": 4,
+          "assigned_gate": "E1",
+          "stages": "已签到在途",
+          "alternate_gates": [
+            "E2"
+          ],
+          "action_class": "已经在途，须继续接待",
+          "must_serve": true,
+          "may_divert_gate": false,
+          "may_shift_window": false,
+          "assembly_time_preserved": true
+        },
+        {
+          "ticket": "G2",
+          "people": 11,
+          "window": 4,
+          "assigned_gate": "E1",
+          "stages": "已出票",
+          "alternate_gates": [
+            "E2"
+          ],
+          "action_class": "有效票，保留承诺份额，可改口但保留集合时间",
+          "must_serve": true,
+          "may_divert_gate": true,
+          "may_shift_window": false,
+          "assembly_time_preserved": true
+        }
+      ],
+      "note": "已出票/已签到在途均为仍有效承诺，停的是*新*售票，不是这些票"
+    },
+    "terminal_recovery_trace": [
+      {
+        "tranche_version": "L1/1",
+        "gate": "E1",
+        "window": 4,
+        "terminal": "T-A",
+        "sold_valid_tickets": 7,
+        "awaiting_recovery_or_ack": 3,
+        "kind": "已下发未回收余量"
+      },
+      {
+        "tranche_version": "L2/1",
+        "gate": "E2",
+        "window": 4,
+        "terminal": "T-B",
+        "sold_valid_tickets": 6,
+        "awaiting_recovery_or_ack": 4,
+        "kind": "已下发未回收余量"
+      },
+      {
+        "tranche_version": "L3/1",
+        "gate": "E2",
+        "window": 5,
+        "terminal": "T-C",
+        "sold_valid_tickets": 0,
+        "awaiting_recovery_or_ack": 13,
+        "kind": "无回执整版敞口"
+      }
+    ],
+    "terminal_holds_latest": [
+      {
+        "terminal": "T-A",
+        "action": "停发该终端下一批额度，直至接收链路确认恢复",
+        "reason": "L1/2 接收失败",
+        "unreconciled_remainder": 0
+      },
+      {
+        "terminal": "T-C",
+        "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+        "reason": "L3/1 无任何接收回执",
+        "unacked_exposure": 13
+      }
+    ]
+  },
+  "audit": {
+    "quota_L1_v2_reconstruction": {
+      "target_window": 4,
+      "before_publish_asof": 3,
+      "pre_round": {
+        "E1_operating": {
+          "gate": "E1",
+          "window": 4,
+          "first_zone": "A",
+          "basis": "operating",
+          "capacity": 41,
+          "hard_capacity": 48,
+          "operating_capacity": 41,
+          "reserved": 7,
+          "start_stock_bounds": {
+            "low": 32,
+            "high": 50,
+            "exact": false
+          },
+          "next_stock_baseline_high_q0": 66,
+          "other_inflow_high": 16,
+          "outflow_low_credited": 0,
+          "safe_total_gate_flow_conservative": 0,
+          "safe_total_gate_flow_central": 0,
+          "gate_slot_capacity": 22,
+          "observed_flow_bounds": {
+            "low": 0,
+            "high": 22,
+            "exact": false
+          },
+          "observed_flow": null,
+          "baseline_already_over_cap": true,
+          "data_insufficient_to_release": true,
+          "deficit_to_cap": 25,
+          "components": [
+            {
+              "route": "BA",
+              "role": "inflow",
+              "high": 16,
+              "central": 8
+            },
+            {
+              "route": "AB",
+              "role": "outflow",
+              "low": 0,
+              "central": 0
+            }
+          ],
+          "zone_state_at_start_hi": "超过硬上限",
+          "note": "当前信息下现状上界已超过容量，不能支持继续发票，先等缺测方向回执"
+        },
+        "limiting_A": [
+          {
+            "route": "BA",
+            "signed": 1,
+            "variable": [
+              "P",
+              "BA",
+              3
+            ],
+            "width": 16,
+            "bounds": {
+              "low": 6,
+              "high": 22,
+              "exact": false
+            },
+            "share_of_width": 0.889,
+            "reasons": [
+              "读数延迟回传 observe=[3]（当前轮不可见）"
+            ]
+          },
+          {
+            "route": "(开场窗口0净流)",
+            "variable": [
+              "G",
+              "A"
+            ],
+            "width": 2,
+            "bounds": {
+              "low": -1,
+              "high": 1,
+              "exact": false
+            },
+            "share_of_width": 0.111,
+            "reasons": [
+              "窗口0无累计前值，由区内点验区间约束"
+            ]
+          }
+        ]
+      },
+      "late_pulse_round_asof": 4,
+      "updated_round": {
+        "E1_operating": {
+          "gate": "E1",
+          "window": 4,
+          "first_zone": "A",
+          "basis": "operating",
+          "capacity": 41,
+          "hard_capacity": 48,
+          "operating_capacity": 41,
+          "reserved": 7,
+          "start_stock_bounds": {
+            "low": 35,
+            "high": 37,
+            "exact": false
+          },
+          "next_stock_baseline_high_q0": 37,
+          "other_inflow_high": 0,
+          "outflow_low_credited": 0,
+          "safe_total_gate_flow_conservative": 4,
+          "safe_total_gate_flow_central": 5,
+          "gate_slot_capacity": 22,
+          "observed_flow_bounds": {
+            "low": 4,
+            "high": 4,
+            "exact": true
+          },
+          "observed_flow": 4,
+          "baseline_already_over_cap": false,
+          "data_insufficient_to_release": false,
+          "deficit_to_cap": 0,
+          "components": [
+            {
+              "route": "BA",
+              "role": "inflow",
+              "high": 0,
+              "central": 0
+            },
+            {
+              "route": "AB",
+              "role": "outflow",
+              "low": 0,
+              "central": 0
+            }
+          ],
+          "zone_state_at_start_hi": "正常",
+          "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+        },
+        "E1_hard": {
+          "gate": "E1",
+          "window": 4,
+          "first_zone": "A",
+          "basis": "hard",
+          "capacity": 48,
+          "hard_capacity": 48,
+          "operating_capacity": 41,
+          "reserved": 7,
+          "start_stock_bounds": {
+            "low": 35,
+            "high": 37,
+            "exact": false
+          },
+          "next_stock_baseline_high_q0": 37,
+          "other_inflow_high": 0,
+          "outflow_low_credited": 0,
+          "safe_total_gate_flow_conservative": 11,
+          "safe_total_gate_flow_central": 12,
+          "gate_slot_capacity": 22,
+          "observed_flow_bounds": {
+            "low": 4,
+            "high": 4,
+            "exact": true
+          },
+          "observed_flow": 4,
+          "baseline_already_over_cap": false,
+          "data_insufficient_to_release": false,
+          "deficit_to_cap": 0,
+          "components": [
+            {
+              "route": "BA",
+              "role": "inflow",
+              "high": 0,
+              "central": 0
+            },
+            {
+              "route": "AB",
+              "role": "outflow",
+              "low": 0,
+              "central": 0
+            }
+          ],
+          "zone_state_at_start_hi": "正常",
+          "note": "保守口径可放总穿越量；中值口径用于解释已签发额度"
+        }
+      },
+      "reconstructed_central_quota": 5,
+      "issued_tranche_L1_v2_quota": 5,
+      "explanation": "BA 观测窗3的累计读数延迟到 known_at=4；asof3 时 B→A 当窗最多 16 人未知，A@W4 上界达 50，无法证明 E1 放号安全。该脉冲到达后 A@W4 核定中值 36，运营上限 48-7=41，41-36=5，恰好解释 L1/2 补发额度 5；严格按点验上界 37 则保守可放 4，硬上限口径可放 11。"
+    },
+    "terminal_rounds": [
+      {
+        "posted_round": 2,
+        "overall": {
+          "sold": 0,
+          "open_remainder": 14,
+          "terminal_commitment": 14,
+          "unacked_exposure": 28,
+          "total_commitment_conservative": 42
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 0,
+            "open_remainder": 14,
+            "terminal_commitment": 14,
+            "unacked_exposure": 5,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 10,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        },
+        "holds": [
+          {
+            "terminal": "T-B",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L2/1 无任何接收回执",
+            "unacked_exposure": 10
+          },
+          {
+            "terminal": "T-A",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L1/2 无任何接收回执",
+            "unacked_exposure": 5
+          },
+          {
+            "terminal": "T-C",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L3/1 无任何接收回执",
+            "unacked_exposure": 13
+          }
+        ]
+      },
+      {
+        "posted_round": 3,
+        "overall": {
+          "sold": 0,
+          "open_remainder": 24,
+          "terminal_commitment": 24,
+          "unacked_exposure": 18,
+          "total_commitment_conservative": 42
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 0,
+            "open_remainder": 14,
+            "terminal_commitment": 14,
+            "unacked_exposure": 5,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 10,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        },
+        "holds": [
+          {
+            "terminal": "T-A",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L1/2 无任何接收回执",
+            "unacked_exposure": 5
+          },
+          {
+            "terminal": "T-C",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L3/1 无任何接收回执",
+            "unacked_exposure": 13
+          }
+        ]
+      },
+      {
+        "posted_round": 4,
+        "overall": {
+          "sold": 7,
+          "open_remainder": 17,
+          "terminal_commitment": 24,
+          "unacked_exposure": 13,
+          "total_commitment_conservative": 37
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 7,
+            "open_remainder": 7,
+            "terminal_commitment": 14,
+            "unacked_exposure": 0,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 10,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        },
+        "holds": [
+          {
+            "terminal": "T-A",
+            "action": "停发该终端下一批额度，直至接收链路确认恢复",
+            "reason": "L1/2 接收失败",
+            "unreconciled_remainder": 0
+          },
+          {
+            "terminal": "T-C",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L3/1 无任何接收回执",
+            "unacked_exposure": 13
+          }
+        ]
+      },
+      {
+        "posted_round": 6,
+        "overall": {
+          "sold": 7,
+          "open_remainder": 12,
+          "terminal_commitment": 19,
+          "unacked_exposure": 13,
+          "total_commitment_conservative": 32
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 7,
+            "open_remainder": 2,
+            "terminal_commitment": 9,
+            "unacked_exposure": 0,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 0,
+            "open_remainder": 10,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        },
+        "holds": [
+          {
+            "terminal": "T-A",
+            "action": "停发该终端下一批额度，直至接收链路确认恢复",
+            "reason": "L1/2 接收失败",
+            "unreconciled_remainder": 0
+          },
+          {
+            "terminal": "T-C",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L3/1 无任何接收回执",
+            "unacked_exposure": 13
+          }
+        ]
+      },
+      {
+        "posted_round": 7,
+        "overall": {
+          "sold": 13,
+          "open_remainder": 7,
+          "terminal_commitment": 20,
+          "unacked_exposure": 13,
+          "total_commitment_conservative": 33
+        },
+        "by_gate_window": {
+          "E1/W4": {
+            "sold": 7,
+            "open_remainder": 3,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 5,
+            "central_superseded_quota": 14
+          },
+          "E2/W4": {
+            "sold": 6,
+            "open_remainder": 4,
+            "terminal_commitment": 10,
+            "unacked_exposure": 0,
+            "central_current_quota": 10,
+            "central_superseded_quota": 0
+          },
+          "E2/W5": {
+            "sold": 0,
+            "open_remainder": 0,
+            "terminal_commitment": 0,
+            "unacked_exposure": 13,
+            "central_current_quota": 13,
+            "central_superseded_quota": 0
+          }
+        },
+        "holds": [
+          {
+            "terminal": "T-A",
+            "action": "停发该终端下一批额度，直至接收链路确认恢复",
+            "reason": "L1/2 接收失败",
+            "unreconciled_remainder": 0
+          },
+          {
+            "terminal": "T-C",
+            "action": "立即索取接收/出票回执；无回执期间按整版额度保守计入承诺",
+            "reason": "L3/1 无任何接收回执",
+            "unacked_exposure": 13
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "day": "2026-02-17",
+        "from_asof": null,
+        "to_asof": 3,
+        "stock_bound_changes": [
+          {
+            "zone": "A",
+            "window": 4,
+            "before": {
+              "low": 35,
+              "high": 37,
+              "exact": false
+            },
+            "after": {
+              "low": 32,
+              "high": 50,
+              "exact": false
+            },
+            "upper_delta": 13
+          },
+          {
+            "zone": "A",
+            "window": 5,
+            "before": {
+              "low": 39,
+              "high": 41,
+              "exact": false
+            },
+            "after": {
+              "low": 32,
+              "high": 75,
+              "exact": false
+            },
+            "upper_delta": 34
+          },
+          {
+            "zone": "A",
+            "window": 6,
+            "before": {
+              "low": 44,
+              "high": 46,
+              "exact": false
+            },
+            "after": {
+              "low": 32,
+              "high": 97,
+              "exact": false
+            },
+            "upper_delta": 51
+          },
+          {
+            "zone": "A",
+            "window": 8,
+            "before": {
+              "low": 47,
+              "high": 49,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 173,
+              "exact": false
+            },
+            "upper_delta": 124
+          },
+          {
+            "zone": "B",
+            "window": 2,
+            "before": {
+              "low": 10,
+              "high": 11,
+              "exact": false
+            },
+            "after": {
+              "low": 7,
+              "high": 26,
+              "exact": false
+            },
+            "upper_delta": 15
+          },
+          {
+            "zone": "B",
+            "window": 4,
+            "before": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "upper_delta": 18
+          },
+          {
+            "zone": "B",
+            "window": 5,
+            "before": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "upper_delta": 18
+          },
+          {
+            "zone": "B",
+            "window": 6,
+            "before": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "upper_delta": 18
+          },
+          {
+            "zone": "B",
+            "window": 8,
+            "before": {
+              "low": 1,
+              "high": 2,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 51,
+              "exact": false
+            },
+            "upper_delta": 49
+          },
+          {
+            "zone": "C",
+            "window": 5,
+            "before": {
+              "low": 19,
+              "high": 21,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 59,
+              "exact": false
+            },
+            "upper_delta": 38
+          },
+          {
+            "zone": "C",
+            "window": 6,
+            "before": {
+              "low": 15,
+              "high": 17,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 77,
+              "exact": false
+            },
+            "upper_delta": 60
+          },
+          {
+            "zone": "C",
+            "window": 8,
+            "before": {
+              "low": 16,
+              "high": 18,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 145,
+              "exact": false
+            },
+            "upper_delta": 127
+          }
+        ],
+        "attributed_sources": [
+          {
+            "category": "flow_inference",
+            "detail": "新到闸机读数 21 条（AB, BA, BC, CO, E1, E2）；其中含延迟回传 BA@obs0(known1)",
+            "records": [
+              {
+                "id": "2026-02-17-E1-0",
+                "sensor": "E1",
+                "observe_time": 0,
+                "known_at": 0,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-AB-0",
+                "sensor": "AB",
+                "observe_time": 0,
+                "known_at": 0,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-BA-0",
+                "sensor": "BA",
+                "observe_time": 0,
+                "known_at": 1,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-BC-0",
+                "sensor": "BC",
+                "observe_time": 0,
+                "known_at": 0,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-CO-0",
+                "sensor": "CO",
+                "observe_time": 0,
+                "known_at": 0,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-E2-0",
+                "sensor": "E2",
+                "observe_time": 0,
+                "known_at": 0,
+                "cumulative": 1800
+              },
+              {
+                "id": "2026-02-17-E1-1",
+                "sensor": "E1",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1805
+              },
+              {
+                "id": "2026-02-17-AB-1",
+                "sensor": "AB",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1805
+              },
+              {
+                "id": "2026-02-17-BA-1",
+                "sensor": "BA",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1804
+              },
+              {
+                "id": "2026-02-17-BC-1",
+                "sensor": "BC",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1805
+              },
+              {
+                "id": "2026-02-17-CO-1",
+                "sensor": "CO",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1808
+              },
+              {
+                "id": "2026-02-17-E2-1",
+                "sensor": "E2",
+                "observe_time": 1,
+                "known_at": 1,
+                "cumulative": 1806
+              },
+              {
+                "id": "2026-02-17-E1-2",
+                "sensor": "E1",
+                "observe_time": 2,
+                "known_at": 2,
+                "cumulative": 1811
+              },
+              {
+                "id": "2026-02-17-BA-2",
+                "sensor": "BA",
+                "observe_time": 2,
+                "known_at": 2,
+                "cumulative": 1806
+              },
+              {
+                "id": "2026-02-17-BC-2",
+                "sensor": "BC",
+                "observe_time": 2,
+                "known_at": 2,
+                "cumulative": 1811
+              },
+              {
+                "id": "2026-02-17-E2-2",
+                "sensor": "E2",
+                "observe_time": 2,
+                "known_at": 2,
+                "cumulative": 1810
+              },
+              {
+                "id": "2026-02-17-E1-3",
+                "sensor": "E1",
+                "observe_time": 3,
+                "known_at": 3,
+                "cumulative": 1818
+              },
+              {
+                "id": "2026-02-17-AB-3",
+                "sensor": "AB",
+                "observe_time": 3,
+                "known_at": 3,
+                "cumulative": 1811
+              },
+              {
+                "id": "2026-02-17-BC-3",
+                "sensor": "BC",
+                "observe_time": 3,
+                "known_at": 3,
+                "cumulative": 1816
+              },
+              {
+                "id": "2026-02-17-CO-3",
+                "sensor": "CO",
+                "observe_time": 3,
+                "known_at": 3,
+                "cumulative": 1827
+              },
+              {
+                "id": "2026-02-17-E2-3",
+                "sensor": "E2",
+                "observe_time": 3,
+                "known_at": 3,
+                "cumulative": 1815
+              }
+            ]
+          },
+          {
+            "category": "late_count",
+            "detail": "晚到人工点验：A W0 [20, 20]（日内点验）；B W0 [14, 14]（日内点验）；C W0 [17, 17]（日内点验）；A W2 [23, 25]（日内点验）；C W2 [19, 21]（日内点验）",
+            "records": [
+              {
+                "id": "2026-02-17-A-0",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "A",
+                "window": 0,
+                "range": [
+                  20,
+                  20
+                ],
+                "known_at": 1
+              },
+              {
+                "id": "2026-02-17-B-0",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "B",
+                "window": 0,
+                "range": [
+                  14,
+                  14
+                ],
+                "known_at": 1
+              },
+              {
+                "id": "2026-02-17-C-0",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "C",
+                "window": 0,
+                "range": [
+                  17,
+                  17
+                ],
+                "known_at": 1
+              },
+              {
+                "id": "2026-02-17-A-2",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "A",
+                "window": 2,
+                "range": [
+                  23,
+                  25
+                ],
+                "known_at": 3
+              },
+              {
+                "id": "2026-02-17-C-2",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "C",
+                "window": 2,
+                "range": [
+                  19,
+                  21
+                ],
+                "known_at": 3
+              }
+            ]
+          },
+          {
+            "category": "terminal_confirmation",
+            "detail": "终端事件：J1 接收 L1/v1 14；J2 接收 L2/v1 10",
+            "correction_reopens_commitment": false,
+            "records": [
+              {
+                "event": "J1",
+                "tranche": "L1",
+                "version": 1,
+                "terminal": "T-A",
+                "posted": 2,
+                "kind": "接收",
+                "amount": 14,
+                "effective_window": 4,
+                "ref": null
+              },
+              {
+                "event": "J2",
+                "tranche": "L2",
+                "version": 1,
+                "terminal": "T-B",
+                "posted": 3,
+                "kind": "接收",
+                "amount": 10,
+                "effective_window": 4,
+                "ref": null
+              }
+            ]
+          },
+          {
+            "category": "seal_or_detour",
+            "detail": "AB W3..W5 封闭（C1），反向不借用",
+            "records": []
+          }
+        ]
+      },
+      {
+        "day": "2026-02-17",
+        "from_asof": 3,
+        "to_asof": 4,
+        "stock_bound_changes": [
+          {
+            "zone": "A",
+            "window": 4,
+            "before": {
+              "low": 32,
+              "high": 50,
+              "exact": false
+            },
+            "after": {
+              "low": 35,
+              "high": 37,
+              "exact": false
+            },
+            "upper_delta": -13
+          },
+          {
+            "zone": "A",
+            "window": 5,
+            "before": {
+              "low": 32,
+              "high": 75,
+              "exact": false
+            },
+            "after": {
+              "low": 39,
+              "high": 41,
+              "exact": false
+            },
+            "upper_delta": -34
+          },
+          {
+            "zone": "A",
+            "window": 6,
+            "before": {
+              "low": 32,
+              "high": 97,
+              "exact": false
+            },
+            "after": {
+              "low": 39,
+              "high": 79,
+              "exact": false
+            },
+            "upper_delta": -18
+          },
+          {
+            "zone": "A",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 173,
+              "exact": false
+            },
+            "after": {
+              "low": 7,
+              "high": 155,
+              "exact": false
+            },
+            "upper_delta": -18
+          },
+          {
+            "zone": "B",
+            "window": 2,
+            "before": {
+              "low": 7,
+              "high": 26,
+              "exact": false
+            },
+            "after": {
+              "low": 10,
+              "high": 26,
+              "exact": false
+            },
+            "upper_delta": 0
+          },
+          {
+            "zone": "B",
+            "window": 4,
+            "before": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "upper_delta": -3
+          },
+          {
+            "zone": "B",
+            "window": 5,
+            "before": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "upper_delta": -3
+          },
+          {
+            "zone": "B",
+            "window": 6,
+            "before": {
+              "low": 0,
+              "high": 19,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "upper_delta": -3
+          },
+          {
+            "zone": "B",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 51,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 48,
+              "exact": false
+            },
+            "upper_delta": -3
+          },
+          {
+            "zone": "C",
+            "window": 5,
+            "before": {
+              "low": 0,
+              "high": 59,
+              "exact": false
+            },
+            "after": {
+              "low": 19,
+              "high": 21,
+              "exact": false
+            },
+            "upper_delta": -38
+          },
+          {
+            "zone": "C",
+            "window": 6,
+            "before": {
+              "low": 0,
+              "high": 77,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 55,
+              "exact": false
+            },
+            "upper_delta": -22
+          },
+          {
+            "zone": "C",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 145,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 123,
+              "exact": false
+            },
+            "upper_delta": -22
+          }
+        ],
+        "attributed_sources": [
+          {
+            "category": "flow_inference",
+            "detail": "新到闸机读数 7 条（AB, BA, BC, CO, E1, E2）；其中含延迟回传 BA@obs3(known4)",
+            "records": [
+              {
+                "id": "2026-02-17-BA-3",
+                "sensor": "BA",
+                "observe_time": 3,
+                "known_at": 4,
+                "cumulative": 1809
+              },
+              {
+                "id": "2026-02-17-E1-4",
+                "sensor": "E1",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1822
+              },
+              {
+                "id": "2026-02-17-AB-4",
+                "sensor": "AB",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1811
+              },
+              {
+                "id": "2026-02-17-BA-4",
+                "sensor": "BA",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1809
+              },
+              {
+                "id": "2026-02-17-BC-4",
+                "sensor": "BC",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1816
+              },
+              {
+                "id": "2026-02-17-CO-4",
+                "sensor": "CO",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1834
+              },
+              {
+                "id": "2026-02-17-E2-4",
+                "sensor": "E2",
+                "observe_time": 4,
+                "known_at": 4,
+                "cumulative": 1821
+              }
+            ]
+          },
+          {
+            "category": "terminal_confirmation",
+            "detail": "终端事件：J3 出票 L1/v1 7；J4 接收失败 L1/v2 0",
+            "correction_reopens_commitment": false,
+            "records": [
+              {
+                "event": "J3",
+                "tranche": "L1",
+                "version": 1,
+                "terminal": "T-A",
+                "posted": 4,
+                "kind": "出票",
+                "amount": 7,
+                "effective_window": 4,
+                "ref": null
+              },
+              {
+                "event": "J4",
+                "tranche": "L1",
+                "version": 2,
+                "terminal": "T-A",
+                "posted": 4,
+                "kind": "接收失败",
+                "amount": 0,
+                "effective_window": 4,
+                "ref": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": "2026-02-17",
+        "from_asof": 4,
+        "to_asof": 6,
+        "stock_bound_changes": [
+          {
+            "zone": "A",
+            "window": 6,
+            "before": {
+              "low": 39,
+              "high": 79,
+              "exact": false
+            },
+            "after": {
+              "low": 44,
+              "high": 46,
+              "exact": false
+            },
+            "upper_delta": -33
+          },
+          {
+            "zone": "A",
+            "window": 8,
+            "before": {
+              "low": 7,
+              "high": 155,
+              "exact": false
+            },
+            "after": {
+              "low": 28,
+              "high": 88,
+              "exact": false
+            },
+            "upper_delta": -67
+          },
+          {
+            "zone": "B",
+            "window": 2,
+            "before": {
+              "low": 10,
+              "high": 26,
+              "exact": false
+            },
+            "after": {
+              "low": 10,
+              "high": 11,
+              "exact": false
+            },
+            "upper_delta": -15
+          },
+          {
+            "zone": "B",
+            "window": 4,
+            "before": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "upper_delta": -15
+          },
+          {
+            "zone": "B",
+            "window": 5,
+            "before": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "upper_delta": -15
+          },
+          {
+            "zone": "B",
+            "window": 6,
+            "before": {
+              "low": 0,
+              "high": 16,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 1,
+              "exact": false
+            },
+            "upper_delta": -15
+          },
+          {
+            "zone": "B",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 48,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 20,
+              "exact": false
+            },
+            "upper_delta": -28
+          },
+          {
+            "zone": "C",
+            "window": 6,
+            "before": {
+              "low": 0,
+              "high": 55,
+              "exact": false
+            },
+            "after": {
+              "low": 15,
+              "high": 17,
+              "exact": false
+            },
+            "upper_delta": -38
+          },
+          {
+            "zone": "C",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 123,
+              "exact": false
+            },
+            "after": {
+              "low": 0,
+              "high": 54,
+              "exact": false
+            },
+            "upper_delta": -69
+          }
+        ],
+        "attributed_sources": [
+          {
+            "category": "flow_inference",
+            "detail": "新到闸机读数 11 条（AB, BA, BC, CO, E1, E2）",
+            "records": [
+              {
+                "id": "2026-02-17-E1-5",
+                "sensor": "E1",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1827
+              },
+              {
+                "id": "2026-02-17-AB-5",
+                "sensor": "AB",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1811
+              },
+              {
+                "id": "2026-02-17-BA-5",
+                "sensor": "BA",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1809
+              },
+              {
+                "id": "2026-02-17-BC-5",
+                "sensor": "BC",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1816
+              },
+              {
+                "id": "2026-02-17-CO-5",
+                "sensor": "CO",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1842
+              },
+              {
+                "id": "2026-02-17-E2-5",
+                "sensor": "E2",
+                "observe_time": 5,
+                "known_at": 5,
+                "cumulative": 1825
+              },
+              {
+                "id": "2026-02-17-E1-6",
+                "sensor": "E1",
+                "observe_time": 6,
+                "known_at": 6,
+                "cumulative": 1833
+              },
+              {
+                "id": "2026-02-17-AB-6",
+                "sensor": "AB",
+                "observe_time": 6,
+                "known_at": 6,
+                "cumulative": 1817
+              },
+              {
+                "id": "2026-02-17-BC-6",
+                "sensor": "BC",
+                "observe_time": 6,
+                "known_at": 6,
+                "cumulative": 1819
+              },
+              {
+                "id": "2026-02-17-CO-6",
+                "sensor": "CO",
+                "observe_time": 6,
+                "known_at": 6,
+                "cumulative": 1851
+              },
+              {
+                "id": "2026-02-17-E2-6",
+                "sensor": "E2",
+                "observe_time": 6,
+                "known_at": 6,
+                "cumulative": 1830
+              }
+            ]
+          },
+          {
+            "category": "late_count",
+            "detail": "晚到人工点验：A W5 [39, 41]（日内点验）；B W5 [-1, 1]（日内点验）",
+            "records": [
+              {
+                "id": "2026-02-17-A-5",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "A",
+                "window": 5,
+                "range": [
+                  39,
+                  41
+                ],
+                "known_at": 6
+              },
+              {
+                "id": "2026-02-17-B-5",
+                "source": "日内点验",
+                "kind": "区内",
+                "target": "B",
+                "window": 5,
+                "range": [
+                  -1,
+                  1
+                ],
+                "known_at": 6
+              }
+            ]
+          },
+          {
+            "category": "terminal_confirmation",
+            "detail": "终端事件：J5 归还 L1/v1 5 关联回执 J1",
+            "correction_reopens_commitment": false,
+            "records": [
+              {
+                "event": "J5",
+                "tranche": "L1",
+                "version": 1,
+                "terminal": "T-A",
+                "posted": 6,
+                "kind": "归还",
+                "amount": 5,
+                "effective_window": 4,
+                "ref": "J1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": "2026-02-17",
+        "from_asof": 6,
+        "to_asof": 7,
+        "stock_bound_changes": [
+          {
+            "zone": "A",
+            "window": 8,
+            "before": {
+              "low": 28,
+              "high": 88,
+              "exact": false
+            },
+            "after": {
+              "low": 47,
+              "high": 49,
+              "exact": false
+            },
+            "upper_delta": -39
+          },
+          {
+            "zone": "B",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 20,
+              "exact": false
+            },
+            "after": {
+              "low": 1,
+              "high": 2,
+              "exact": false
+            },
+            "upper_delta": -18
+          },
+          {
+            "zone": "C",
+            "window": 8,
+            "before": {
+              "low": 0,
+              "high": 54,
+              "exact": false
+            },
+            "after": {
+              "low": 16,
+              "high": 18,
+              "exact": false
+            },
+            "upper_delta": -36
+          }
+        ],
+        "attributed_sources": [
+          {
+            "category": "flow_inference",
+            "detail": "新到闸机读数 7 条（AB, BA, BC, CO, E1, E2）；其中含延迟回传 BA@obs6(known7)",
+            "records": [
+              {
+                "id": "2026-02-17-BA-6",
+                "sensor": "BA",
+                "observe_time": 6,
+                "known_at": 7,
+                "cumulative": 1809
+              },
+              {
+                "id": "2026-02-17-E1-7",
+                "sensor": "E1",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1840
+              },
+              {
+                "id": "2026-02-17-AB-7",
+                "sensor": "AB",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1824
+              },
+              {
+                "id": "2026-02-17-BA-7",
+                "sensor": "BA",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1812
+              },
+              {
+                "id": "2026-02-17-BC-7",
+                "sensor": "BC",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1825
+              },
+              {
+                "id": "2026-02-17-CO-7",
+                "sensor": "CO",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1861
+              },
+              {
+                "id": "2026-02-17-E2-7",
+                "sensor": "E2",
+                "observe_time": 7,
+                "known_at": 7,
+                "cumulative": 1836
+              }
+            ]
+          },
+          {
+            "category": "terminal_confirmation",
+            "detail": "终端事件：J6 回执订正 L1/v1 4 订正事件 J5；J7 出票 L2/v1 6",
+            "correction_reopens_commitment": true,
+            "records": [
+              {
+                "event": "J6",
+                "tranche": "L1",
+                "version": 1,
+                "terminal": "T-A",
+                "posted": 7,
+                "kind": "回执订正",
+                "amount": 4,
+                "effective_window": 4,
+                "ref": "J5"
+              },
+              {
+                "event": "J7",
+                "tranche": "L2",
+                "version": 1,
+                "terminal": "T-B",
+                "posted": 7,
+                "kind": "出票",
+                "amount": 6,
+                "effective_window": 4,
+                "ref": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "day": "2026-02-17",
+        "from_asof": 7,
+        "to_asof": 9,
+        "stock_bound_changes": [],
+        "attributed_sources": [
+          {
+            "category": "flow_inference",
+            "detail": "新到闸机读数 7 条（AB, BA, BC, CO, E1, E2）；其中含延迟回传 AB@obs4(known8)；含恢复后补传，差额归入 observe_time 而非本接收窗",
+            "records": [
+              {
+                "id": "2026-02-17-E1-8",
+                "sensor": "E1",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1844
+              },
+              {
+                "id": "2026-02-17-AB-8",
+                "sensor": "AB",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1828
+              },
+              {
+                "id": "2026-02-17-BA-8",
+                "sensor": "BA",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1813
+              },
+              {
+                "id": "2026-02-17-BC-8",
+                "sensor": "BC",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1828
+              },
+              {
+                "id": "2026-02-17-CO-8",
+                "sensor": "CO",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1868
+              },
+              {
+                "id": "2026-02-17-E2-8",
+                "sensor": "E2",
+                "observe_time": 8,
+                "known_at": 8,
+                "cumulative": 1840
+              },
+              {
+                "id": "AB-补传",
+                "sensor": "AB",
+                "observe_time": 4,
+                "known_at": 8,
+                "cumulative": 1811
+              }
+            ]
+          },
+          {
+            "category": "late_count",
+            "detail": "晚到人工点验：A W8 [48, 48]（独立收尾点验）；B W8 [1, 1]（独立收尾点验）；C W8 [17, 17]（独立收尾点验）",
+            "records": [
+              {
+                "id": "2026-02-17-A-8",
+                "source": "独立收尾点验",
+                "kind": "区内",
+                "target": "A",
+                "window": 8,
+                "range": [
+                  48,
+                  48
+                ],
+                "known_at": 9
+              },
+              {
+                "id": "2026-02-17-B-8",
+                "source": "独立收尾点验",
+                "kind": "区内",
+                "target": "B",
+                "window": 8,
+                "range": [
+                  1,
+                  1
+                ],
+                "known_at": 9
+              },
+              {
+                "id": "2026-02-17-C-8",
+                "source": "独立收尾点验",
+                "kind": "区内",
+                "target": "C",
+                "window": 8,
+                "range": [
+                  17,
+                  17
+                ],
+                "known_at": 9
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "backtest": {
+    "close_coverage": {
+      "checks": 36,
+      "covered": 36,
+      "coverage_rate": 1.0
+    },
+    "close_coverage_rows": [
+      {
+        "day": "2026-02-02",
+        "zone": "A",
+        "independent_close": 35,
+        "inferred_low": 34,
+        "inferred_high": 36,
+        "central": 35,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-02",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 1,
+        "inferred_high": 3,
+        "central": 2,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-03",
+        "zone": "A",
+        "independent_close": 33,
+        "inferred_low": 32,
+        "inferred_high": 34,
+        "central": 33,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-03",
+        "zone": "C",
+        "independent_close": 31,
+        "inferred_low": 30,
+        "inferred_high": 32,
+        "central": 31,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-04",
+        "zone": "B",
+        "independent_close": 1,
+        "inferred_low": 1,
+        "inferred_high": 2,
+        "central": 1,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-04",
+        "zone": "C",
+        "independent_close": 32,
+        "inferred_low": 31,
+        "inferred_high": 33,
+        "central": 32,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-05",
+        "zone": "A",
+        "independent_close": 38,
+        "inferred_low": 37,
+        "inferred_high": 39,
+        "central": 38,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-05",
+        "zone": "B",
+        "independent_close": 3,
+        "inferred_low": 2,
+        "inferred_high": 4,
+        "central": 3,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-05",
+        "zone": "C",
+        "independent_close": 28,
+        "inferred_low": 27,
+        "inferred_high": 29,
+        "central": 28,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-06",
+        "zone": "A",
+        "independent_close": 38,
+        "inferred_low": 31,
+        "inferred_high": 42,
+        "central": 36,
+        "covered": true,
+        "central_abs_error": 2
+      },
+      {
+        "day": "2026-02-06",
+        "zone": "B",
+        "independent_close": 1,
+        "inferred_low": 0,
+        "inferred_high": 9,
+        "central": 4,
+        "covered": true,
+        "central_abs_error": 3
+      },
+      {
+        "day": "2026-02-07",
+        "zone": "A",
+        "independent_close": 30,
+        "inferred_low": 29,
+        "inferred_high": 31,
+        "central": 30,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-07",
+        "zone": "C",
+        "independent_close": 30,
+        "inferred_low": 29,
+        "inferred_high": 31,
+        "central": 30,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-08",
+        "zone": "B",
+        "independent_close": 1,
+        "inferred_low": 0,
+        "inferred_high": 2,
+        "central": 1,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-08",
+        "zone": "C",
+        "independent_close": 32,
+        "inferred_low": 31,
+        "inferred_high": 33,
+        "central": 32,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-09",
+        "zone": "A",
+        "independent_close": 36,
+        "inferred_low": 35,
+        "inferred_high": 37,
+        "central": 36,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-09",
+        "zone": "B",
+        "independent_close": 0,
+        "inferred_low": 0,
+        "inferred_high": 2,
+        "central": 1,
+        "covered": true,
+        "central_abs_error": 1
+      },
+      {
+        "day": "2026-02-09",
+        "zone": "C",
+        "independent_close": 28,
+        "inferred_low": 27,
+        "inferred_high": 29,
+        "central": 28,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-10",
+        "zone": "A",
+        "independent_close": 38,
+        "inferred_low": 37,
+        "inferred_high": 39,
+        "central": 38,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-10",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 1,
+        "inferred_high": 3,
+        "central": 2,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-11",
+        "zone": "A",
+        "independent_close": 34,
+        "inferred_low": 33,
+        "inferred_high": 35,
+        "central": 34,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-11",
+        "zone": "C",
+        "independent_close": 30,
+        "inferred_low": 29,
+        "inferred_high": 31,
+        "central": 30,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-12",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 0,
+        "inferred_high": 9,
+        "central": 4,
+        "covered": true,
+        "central_abs_error": 2
+      },
+      {
+        "day": "2026-02-12",
+        "zone": "C",
+        "independent_close": 30,
+        "inferred_low": 19,
+        "inferred_high": 40,
+        "central": 29,
+        "covered": true,
+        "central_abs_error": 1
+      },
+      {
+        "day": "2026-02-13",
+        "zone": "A",
+        "independent_close": 33,
+        "inferred_low": 32,
+        "inferred_high": 34,
+        "central": 33,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-13",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 1,
+        "inferred_high": 3,
+        "central": 2,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-13",
+        "zone": "C",
+        "independent_close": 27,
+        "inferred_low": 26,
+        "inferred_high": 28,
+        "central": 27,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-14",
+        "zone": "A",
+        "independent_close": 36,
+        "inferred_low": 35,
+        "inferred_high": 37,
+        "central": 36,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-14",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 1,
+        "inferred_high": 3,
+        "central": 2,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-15",
+        "zone": "A",
+        "independent_close": 34,
+        "inferred_low": 33,
+        "inferred_high": 35,
+        "central": 34,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-15",
+        "zone": "C",
+        "independent_close": 32,
+        "inferred_low": 31,
+        "inferred_high": 33,
+        "central": 32,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-16",
+        "zone": "B",
+        "independent_close": 2,
+        "inferred_low": 1,
+        "inferred_high": 3,
+        "central": 2,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-16",
+        "zone": "C",
+        "independent_close": 30,
+        "inferred_low": 29,
+        "inferred_high": 31,
+        "central": 30,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-17",
+        "zone": "A",
+        "independent_close": 48,
+        "inferred_low": 47,
+        "inferred_high": 49,
+        "central": 48,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-17",
+        "zone": "B",
+        "independent_close": 1,
+        "inferred_low": 1,
+        "inferred_high": 2,
+        "central": 1,
+        "covered": true,
+        "central_abs_error": 0
+      },
+      {
+        "day": "2026-02-17",
+        "zone": "C",
+        "independent_close": 17,
+        "inferred_low": 16,
+        "inferred_high": 18,
+        "central": 17,
+        "covered": true,
+        "central_abs_error": 0
+      }
+    ],
+    "intra_compatibility": {
+      "checks": 72,
+      "compatible": 72,
+      "compatibility_rate": 1.0
+    },
+    "peak_pressure": [
+      {
+        "day": "2026-02-17",
+        "zone": "A",
+        "peak_window": 8,
+        "peak_bounds": {
+          "low": 47,
+          "high": 49,
+          "exact": false
+        },
+        "operating_cap": 41,
+        "hard_cap": 48,
+        "independent_close": 48,
+        "assessment": "触及硬上限：继续放号即误放行"
+      }
+    ],
+    "possible_false_release_zones": [
+      {
+        "day": "2026-02-17",
+        "zone": "A",
+        "assessment": "触及硬上限：继续放号即误放行",
+        "peak_bounds": {
+          "low": 47,
+          "high": 49,
+          "exact": false
+        },
+        "independent_close": 48
+      }
+    ],
+    "pre_round_uncertainty_watchlist": {
+      "possible_false_release": [
+        {
+          "day": "2026-02-02",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 8,
+            "high": 71,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 54,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 35,
+          "reason": "保守上界 71 已达/超运营上限 41，已触硬上限"
+        },
+        {
+          "day": "2026-02-04",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 71,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 55,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 32,
+          "reason": "保守上界 71 已达/超运营上限 49，已触硬上限"
+        },
+        {
+          "day": "2026-02-05",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 25,
+            "high": 43,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 38,
+          "reason": "保守上界 43 已达/超运营上限 41，距硬上限仅 5"
+        },
+        {
+          "day": "2026-02-06",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 11,
+            "high": 75,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 54,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 38,
+          "reason": "保守上界 75 已达/超运营上限 41，已触硬上限"
+        },
+        {
+          "day": "2026-02-08",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 7,
+            "high": 62,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 55,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 32,
+          "reason": "保守上界 62 已达/超运营上限 49，已触硬上限"
+        },
+        {
+          "day": "2026-02-10",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 86,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 54,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 38,
+          "reason": "保守上界 86 已达/超运营上限 41，已触硬上限"
+        },
+        {
+          "day": "2026-02-11",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 23,
+            "high": 41,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 34,
+          "reason": "保守上界 41 已达/超运营上限 41，距硬上限仅 7"
+        },
+        {
+          "day": "2026-02-12",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 7,
+            "high": 63,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 56,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 30,
+          "reason": "保守上界 63 已达/超运营上限 49，已触硬上限"
+        },
+        {
+          "day": "2026-02-14",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 8,
+            "high": 73,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 54,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 36,
+          "reason": "保守上界 73 已达/超运营上限 41，已触硬上限"
+        },
+        {
+          "day": "2026-02-16",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 71,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 55,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": 30,
+          "reason": "保守上界 71 已达/超运营上限 49，已触硬上限"
+        },
+        {
+          "day": "2026-02-17",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 32,
+            "high": 50,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 48,
+          "reason": "保守上界 50 已达/超运营上限 41，已触硬上限"
+        }
+      ],
+      "cannot_certify_safety": [
+        {
+          "day": "2026-02-03",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 20,
+            "high": 38,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 33,
+          "reason": "延迟/缺测方向的当窗流入未知，无法证明放号安全"
+        },
+        {
+          "day": "2026-02-07",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 20,
+            "high": 38,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 30,
+          "reason": "延迟/缺测方向的当窗流入未知，无法证明放号安全"
+        },
+        {
+          "day": "2026-02-09",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 22,
+            "high": 40,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 36,
+          "reason": "延迟/缺测方向的当窗流入未知，无法证明放号安全"
+        },
+        {
+          "day": "2026-02-13",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 22,
+            "high": 40,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 33,
+          "reason": "延迟/缺测方向的当窗流入未知，无法证明放号安全"
+        },
+        {
+          "day": "2026-02-15",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 20,
+            "high": 38,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "BA",
+            "width": 16,
+            "reason": "读数延迟回传 observe=[3]（当前轮不可见）"
+          },
+          "actual_close": 34,
+          "reason": "延迟/缺测方向的当窗流入未知，无法证明放号安全"
+        }
+      ],
+      "missing_opening_anchor": [
+        {
+          "day": "2026-02-02",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 63,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 39,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-04",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 83,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 36,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-06",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 65,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 40,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-08",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 67,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 34,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-10",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 70,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 39,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-12",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 77,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 39,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-14",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E2",
+          "zone": "C",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 63,
+            "exact": false
+          },
+          "operating_cap": 49,
+          "hard_cap": 55,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 39,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        },
+        {
+          "day": "2026-02-16",
+          "target_window": 4,
+          "asof": 3,
+          "gate": "E1",
+          "zone": "A",
+          "stock_bounds_at_window_start": {
+            "low": 0,
+            "high": 83,
+            "exact": false
+          },
+          "operating_cap": 41,
+          "hard_cap": 48,
+          "safe_operating_quota": 0,
+          "safe_hard_quota": 0,
+          "limiting_direction": {
+            "route": "(开场窗口0净流)",
+            "width": 36,
+            "reason": "窗口0无累计前值，由区内点验区间约束"
+          },
+          "actual_close": null,
+          "reason": "缺 w0 开场点验，开场净流无界"
+        }
+      ]
+    },
+    "historical_decision_reruns": [
+      {
+        "day": "2026-02-05",
+        "rounds": {
+          "asof3": {
+            "E1": {
+              "stock": {
+                "low": 25,
+                "high": 43,
+                "exact": false
+              },
+              "central_safe": 7,
+              "conservative_safe": 0,
+              "insufficient": true
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 5,
+              "insufficient": false
+            }
+          },
+          "asof4": {
+            "E1": {
+              "stock": {
+                "low": 28,
+                "high": 30,
+                "exact": false
+              },
+              "central_safe": 12,
+              "conservative_safe": 11,
+              "insufficient": false
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 18,
+              "insufficient": false
+            }
+          }
+        },
+        "close_N8": {
+          "A": {
+            "low": 37,
+            "high": 39,
+            "exact": false
+          },
+          "B": {
+            "low": 2,
+            "high": 4,
+            "exact": false
+          },
+          "C": {
+            "low": 27,
+            "high": 29,
+            "exact": false
+          }
+        },
+        "independent_close": {
+          "A": 38,
+          "B": 3,
+          "C": 28
+        },
+        "caps": {
+          "A": {
+            "operating": 41,
+            "hard": 48
+          },
+          "B": {
+            "operating": 37,
+            "hard": 42
+          },
+          "C": {
+            "operating": 49,
+            "hard": 55
+          }
+        }
+      },
+      {
+        "day": "2026-02-09",
+        "rounds": {
+          "asof3": {
+            "E1": {
+              "stock": {
+                "low": 22,
+                "high": 40,
+                "exact": false
+              },
+              "central_safe": 10,
+              "conservative_safe": 0,
+              "insufficient": true
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 5,
+              "insufficient": false
+            }
+          },
+          "asof4": {
+            "E1": {
+              "stock": {
+                "low": 26,
+                "high": 28,
+                "exact": false
+              },
+              "central_safe": 20,
+              "conservative_safe": 11,
+              "insufficient": false
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 18,
+              "insufficient": false
+            }
+          }
+        },
+        "close_N8": {
+          "A": {
+            "low": 35,
+            "high": 37,
+            "exact": false
+          },
+          "B": {
+            "low": 0,
+            "high": 2,
+            "exact": false
+          },
+          "C": {
+            "low": 27,
+            "high": 29,
+            "exact": false
+          }
+        },
+        "independent_close": {
+          "A": 36,
+          "B": 0,
+          "C": 28
+        },
+        "caps": {
+          "A": {
+            "operating": 41,
+            "hard": 48
+          },
+          "B": {
+            "operating": 37,
+            "hard": 42
+          },
+          "C": {
+            "operating": 49,
+            "hard": 55
+          }
+        }
+      },
+      {
+        "day": "2026-02-13",
+        "rounds": {
+          "asof3": {
+            "E1": {
+              "stock": {
+                "low": 22,
+                "high": 40,
+                "exact": false
+              },
+              "central_safe": 10,
+              "conservative_safe": 0,
+              "insufficient": true
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 5,
+              "insufficient": false
+            }
+          },
+          "asof4": {
+            "E1": {
+              "stock": {
+                "low": 24,
+                "high": 26,
+                "exact": false
+              },
+              "central_safe": 17,
+              "conservative_safe": 16,
+              "insufficient": false
+            },
+            "E2": {
+              "stock": {
+                "low": 22,
+                "high": 24,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 18,
+              "insufficient": false
+            }
+          }
+        },
+        "close_N8": {
+          "A": {
+            "low": 32,
+            "high": 34,
+            "exact": false
+          },
+          "B": {
+            "low": 1,
+            "high": 3,
+            "exact": false
+          },
+          "C": {
+            "low": 26,
+            "high": 28,
+            "exact": false
+          }
+        },
+        "independent_close": {
+          "A": 33,
+          "B": 2,
+          "C": 27
+        },
+        "caps": {
+          "A": {
+            "operating": 41,
+            "hard": 48
+          },
+          "B": {
+            "operating": 37,
+            "hard": 42
+          },
+          "C": {
+            "operating": 49,
+            "hard": 55
+          }
+        }
+      },
+      {
+        "day": "2026-02-17",
+        "rounds": {
+          "asof3": {
+            "E1": {
+              "stock": {
+                "low": 32,
+                "high": 50,
+                "exact": false
+              },
+              "central_safe": 0,
+              "conservative_safe": 0,
+              "insufficient": true
+            },
+            "E2": {
+              "stock": {
+                "low": 20,
+                "high": 22,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 8,
+              "insufficient": false
+            }
+          },
+          "asof4": {
+            "E1": {
+              "stock": {
+                "low": 35,
+                "high": 37,
+                "exact": false
+              },
+              "central_safe": 5,
+              "conservative_safe": 4,
+              "insufficient": false
+            },
+            "E2": {
+              "stock": {
+                "low": 20,
+                "high": 22,
+                "exact": false
+              },
+              "central_safe": 18,
+              "conservative_safe": 18,
+              "insufficient": false
+            }
+          }
+        },
+        "close_N8": {
+          "A": {
+            "low": 47,
+            "high": 49,
+            "exact": false
+          },
+          "B": {
+            "low": 1,
+            "high": 2,
+            "exact": false
+          },
+          "C": {
+            "low": 16,
+            "high": 18,
+            "exact": false
+          }
+        },
+        "independent_close": {
+          "A": 48,
+          "B": 1,
+          "C": 17
+        },
+        "caps": {
+          "A": {
+            "operating": 41,
+            "hard": 48
+          },
+          "B": {
+            "operating": 37,
+            "hard": 42
+          },
+          "C": {
+            "operating": 49,
+            "hard": 55
+          }
+        }
+      }
+    ],
+    "actual_cap_breach_zones": [
+      {
+        "day": "2026-02-17",
+        "zone": "A",
+        "close": 48,
+        "hard_cap": 48,
+        "operating_cap": 41,
+        "verdict": "收尾达到硬上限，继续放号即误放行"
+      }
+    ]
+  }
+}
